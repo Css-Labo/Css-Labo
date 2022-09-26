@@ -1,0 +1,42 @@
+
+
+//ユーザテーブル
+CREATE TABLE user_tbl(
+    user_id     INT         AUTO_INCREMENT,
+    user_name   VARCHAR(30) NOT NULL    ,
+    user_pass   VARCHAR(30) NOT NULL    ,
+    user_mail   VARCHAR(30) NOT NULL    ,
+    PRIMARY KEY (user_id)
+);
+
+//CSSテーブル
+CREATE TABLE css_tbl(
+    css_id      INT         AUTO_INCREMENT,
+    creater_name INT        NOT NULL,
+    css_name    VARCHAR(20) NOT NULL    ,
+    css_code    VARCHAR(100)NOT NULL    ,
+    css_tag     VARCHAR(100)            ,
+    css_like    INT         default 0   ,
+    PRIMARY KEY (css_id),
+    FOREIGN KEY (creater_name)   REFERENCES  user_tbl(user_id)
+);
+
+//お気に入りテーブル
+CREATE TABLE bookmark_tbl(
+    bookmark_id INT         AUTO_INCREMENT,
+    user_id     INT         NOT NULL    ,
+    css_id      INT         NOT NULL    ,
+    PRIMARY KEY (bookmark_id),
+    FOREIGN KEY (user_id)   REFERENCES  user_tbl(user_id),
+    FOREIGN KEY (css_id)    REFERENCES  css_tbl(css_id)
+);
+
+//コメントテーブル
+CREATE TABLE comment_tbl(
+    thread_id   INT         AUTO_INCREMENT,
+    css_id      INT         NOT NULL    ,
+    comment     VARCHAR(200) NOT NULL   ,
+    PRIMARY KEY (thread_id),
+    FOREIGN KEY (css_id)    REFERENCES  css_tbl(css_id)
+);
+
