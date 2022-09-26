@@ -13,7 +13,7 @@ $pdo = new PDO('mysql:host=XXXX;dbname=XXXX;charset=utf8', 'USER', 'PASS');
 
 
 
-    function toroku($name,$PASS){
-        
+    function toroku($name,$pass,$mail){
+        $sql3 = "";
     }
 ?>
