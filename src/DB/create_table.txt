@@ -5,7 +5,7 @@ CREATE TABLE user_tbl(
     user_id     INT         AUTO_INCREMENT,
     user_name   VARCHAR(30) NOT NULL    ,
     user_pass   VARCHAR(30) NOT NULL    ,
-    user_mail   VARCHAR(30) NOT NULL    ,
+    user_mail   VARCHAR(50) NOT NULL    ,
     PRIMARY KEY (user_id)
 );
 
@@ -14,7 +14,8 @@ CREATE TABLE css_tbl(
     css_id      INT         AUTO_INCREMENT,
     creater_name INT        NOT NULL,
     css_name    VARCHAR(20) NOT NULL    ,
-    css_code    VARCHAR(100)NOT NULL    ,
+    css_img     BLOB        NOT NULL    ,
+    css_code    VARCHAR(500) NOT NULL    ,
     css_tag     VARCHAR(100)            ,
     css_like    INT         default 0   ,
     PRIMARY KEY (css_id),
