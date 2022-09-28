@@ -1,0 +1,20 @@
+
+
+//ユーザテーブル(VARCHAR,VARCHAR,VARCHAR)
+INSERT INTO user_tbl (user_name,user_pass,user_mail) VALUE
+('上田','ueda0000','ueda@gmail.com'),
+('明石','akashi1111','akashi@gmail.com'),
+('糸山','itoyama2222','itoyama@gmail.com'),
+('宮川','miyagawa3333','miyagawa@gmail.com');
+
+
+//CSSテーブル(INT,VARCHAR,MEDIUMBLOB,VARCHAR,VARCHAR)
+INSERT INTO css_tbl (creater_id,css_name,css_img,css_code,css_tag) VALUE
+(1,'sample_name1','sample_img1','sample_code1','sample_tag1'),
+(2,'sample_name2','sample_img2','sample_code2','sample_tag2'),
+(3,'sample_name3','sample_img3','sample_code3','sample_tag3'),
+(4,'sample_name4','sample_img4','sample_code4','sample_tag4');
+
+
+
+//
