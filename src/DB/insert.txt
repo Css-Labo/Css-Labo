@@ -17,4 +17,21 @@ INSERT INTO css_tbl (creater_id,css_name,css_img,css_code,css_tag) VALUE
 
 
 
-//
+//お気に入りテーブル(INT,INT)
+INSERT INTO bookmark_tbl (user_id,css_id) VALUE
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(1,4),
+(2,3),
+(3,4),
+(4,1);
+
+
+//コメントテーブル(INT,VARCHAR)
+INSERT INTO comment_tbl (css_id,comment) VALUE
+(1,'sample_comment1'),
+(2,'sample_comment2'),
+(3,'sample_comment3'),
+(4,'sample_comment4');

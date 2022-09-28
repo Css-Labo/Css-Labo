@@ -19,7 +19,7 @@ CREATE TABLE css_tbl(
     css_tag     VARCHAR(100)            ,
     css_like    INT         default 0   ,
     PRIMARY KEY (css_id),
-    FOREIGN KEY (creater_name)   REFERENCES  user_tbl(user_id)
+    FOREIGN KEY (creater_id)   REFERENCES  user_tbl(user_id)
 );
 
 //お気に入りテーブル
