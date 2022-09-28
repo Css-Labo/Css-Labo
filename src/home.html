@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./CSS/home.css">
     <title>home</title>
 </head>
+<script>
+    function putdots(){
+      document.getElementById("bookmark").style.display = "block";
+      document.getElementById("send").style.display = "block";
+
+    }
+</script>
 <body>
     <nav class="navbar navbar-expand-lg navbar-info bg-while" aria-label="Tenth navbar example">
         <div class="container-fluid">
@@ -46,10 +53,10 @@
         </div>
       </nav>
 
-      <div class="container" id="con2">
+      <div class="container mt-3" id="con2">
         <div class="row">
-            <div class="col-10">
-                <input type="text" class="form-control" style="background-color: #A0522D;" placeholder="search">
+            <div class="col-9 offset-1">
+                <input type="text" class="form-control" style="background-color: #CC6B3C;width: 500px;;" placeholder="search">
             </div>
             <div class="col-2">
                 <span class="input-group-btn">
@@ -57,16 +64,54 @@
                 </span>
             </div>
         </div>
-        <div class="card" style="width: 20rem;">
-          <img src="PNG/g1.png" class="card-img-top" alt="">
-          <div>
-            <i class="bi bi-hand-thumbs-up"></i>
-            <i class="bi bi-send"></i>
-            <i class="bi bi-bookmark-star"></i>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">title</h5>
-            <p class="card-text text-center">aaa</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <div class="card mt-5" style="width: 24rem;" id="saito">
+                <img src="PNG/g1.png" class="card-img-top" alt="">
+                  <div class="row">
+                    <div class="col-1 offset-9">
+                      <i class="bi bi-hand-thumbs-up"></i>
+                    </div>
+                    <div class="col-1" id="dots" onclick="putdots()">
+                      <i class="bi bi-three-dots"></i>
+                    </div>
+                    <div class="" id="bookmark">
+                      <i class="bi bi-bookmark-star"></i>
+                    </div>
+                    <div class="" id="send">
+                      <i class="bi bi-send"></i>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">title</h5>
+                  <p class="card-text text-center">aaa</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card mt-5" style="width: 24rem;" id="saito">
+                <img src="PNG/g1.png" class="card-img-top" alt="">
+                  <div class="row">
+                    <div class="col-1 offset-9">
+                      <i class="bi bi-hand-thumbs-up"></i>
+                    </div>
+                    <div class="col-1" id="dots" onclick="putdots()">
+                      <i class="bi bi-three-dots"></i>
+                    </div>
+                    <div class="" id="bookmark">
+                      <i class="bi bi-bookmark-star"></i>
+                    </div>
+                    <div class="" id="send">
+                      <i class="bi bi-send"></i>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">title</h5>
+                  <p class="card-text text-center">aaa</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
