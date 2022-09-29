@@ -1,0 +1,1520 @@
+@charset "utf-8";
+.BgWrapper {
+    width: 100%;
+    background-color:rgba(255, 255, 255, .8)
+}
+
+.Gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 1120px;
+    min-width: 1120px;
+    max-width: 1120px;
+    table-layout: fixed;
+    width: auto;
+    margin:0 auto
+}
+
+.Gallery .SideMenu {
+    display: block;
+    float: left;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 160px;
+    max-width: 160px;
+    min-width: 160px;
+    background-color:transparent
+}
+
+.Gallery .SideMenu .MenuFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 25px 10px 30px 0;
+    box-sizing:border-box
+}
+
+.Gallery .SideMenu .MenuFrame .MenuItem {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+    position:relative
+}
+
+.Gallery .SideMenu .MenuFrame .MenuItem.Sub {
+    padding-left:15px
+}
+
+.Gallery .SideMenu .MenuFrame .MenuItem.Sub.Favo {
+}
+
+.Gallery .SideMenu .MenuFrame .MenuItem.Sub.Favo .FavoStar {
+    display: block;
+    float: left;
+    width: 13px;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #e6e6e0;
+    z-index: 1;
+    padding: 0 0 0 5px;
+    text-align:center
+}
+
+.Gallery .SideMenu .MenuFrame .MenuItem.SubSub {
+    padding-left:30px
+}
+
+.Gallery .ContentsMain {
+    display: block;
+    float: left;
+    flex-grow: 0;
+    min-width: 960px;
+    padding-bottom: 30px;
+    width:100%
+}
+
+#Wrapper, .Wrapper {
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+    min-width:1200px
+}
+
+.Wrapper.Narrow {
+    width: 1024px;
+    min-width:1024px
+}
+
+.Wrapper.Full {
+    width:1200px
+}
+
+@media screen and (min-width: 1200px) {
+    .Wrapper.Full {
+        width:1200px
+    }
+}
+
+.Wrapper.GalleryMain {
+    width: 960px;
+    min-width: 960px;
+    max-width:960px
+}
+
+@media screen and (min-width: 1360px) {
+    .Gallery {
+        width: 1360px;
+        min-width: 1360px;
+        max-width:1360px
+    }
+
+    .Wrapper.GalleryMain {
+        width: 1200px;
+        min-width: 1200px;
+        max-width:1200px
+    }
+}
+
+.Wrapper.Home {
+    width:640px
+}
+
+@media screen and (min-width: 1300px) {
+    .Wrapper.Home {
+        width:1010px
+    }
+}
+
+#Contents, .Contents {
+    float: left;
+    width: 100%;
+    padding:0
+}
+
+.Contents.Menu {
+    display:table
+}
+
+.ContentsLeft {
+    float: left;
+    width: 640px;
+    border-radius:1px
+}
+
+.ContentsRight {
+    float: right;
+    width: 336px;
+    padding: 0;
+    position:relative
+}
+
+.SideBar {
+    margin-bottom: 30px;
+    float: left;
+    width:100%
+}
+
+.SideBar .SideBarTitle {
+    float: left;
+    width: 100%;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    padding: 5px 0;
+    font-size:20px
+}
+
+.SideBar .SideBarBody {
+    float: left;
+    width: 316px;
+    padding: 10px;
+    background: #ddd;
+    font-size:15px
+}
+
+.SideBar .SideBarBody .SideBarMore {
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    text-align: right;
+    margin: 5px 0 0;
+    text-decoration:none
+}
+
+#FixedFlame.Fixed {
+    position: fixed;
+    top: 40px;
+    z-index:90
+}
+
+#FixedFlame.Bottom {
+    position: absolute;
+    bottom:0
+}
+
+.NaviList {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin:0 0 10px
+}
+
+.ContentsListIllustThumb {
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    padding:0 0 20px
+}
+
+.Contents.Menu .ContentsListIllustThumb {
+    display: table-cell;
+    float: none;
+    vertical-align:top
+}
+
+.ContentsListIllustThumb .IllustThumbList {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style:none
+}
+
+.IllustThumb {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 8px;
+    background-color: #fff;
+    width: 202px;
+    margin: 0 10px 20px;
+    overflow: hidden;
+    text-align: left;
+    border:solid 1px #d0d0c5
+}
+
+.IllustThumb .IllustThumbFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    height: 266px;
+    border: solid 1px #eeeee5;
+    box-sizing: border-box;
+    height:284px
+}
+
+.IllustThumb .IllustThumbDisp {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    cursor:pointer
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd {
+    position: relative;
+    height:0
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd .IllustThumbCmdHot {
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5656;
+    padding: 3px 20px;
+    left: 0;
+    top: 0;
+    width: 45px;
+    text-align: center;
+    left: -28px;
+    top: 15px;
+    width: 73px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    text-align: center;
+    font-weight: 700;
+    z-index:1
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd .IllustThumbCmdHot.Upload {
+    display:none
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd .IllustThumbCmdHot.Bookmark {
+    background-color:#4ae
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd .IllustThumbCmdHot.Comment {
+    background-color:#ff5656
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbCmd .IllustThumbCmdHot.Heart {
+    background-color:#ff5656
+}
+
+.IllustThumb .IllustThumbFrame .IllustCommentNum {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4ae;
+    padding: 0;
+    right: 0;
+    top: 0;
+    min-width: 50px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size:14px
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    background: transparent 50% 50% no-repeat;
+    background-size:cover
+}
+
+.IllustThumb .IllustThumbFrame .IllustThumbImg .IllustThumbImgImg {
+    display: inline-block;
+    border: none;
+    width: auto !important;
+    max-width: 100% !important;
+    max-height:600px !important
+}
+
+.IllustThumb .IllustThumbInfoUser {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin:5px 0 0
+}
+
+.IllustThumb .IllustThumbInfoUserName {
+    display: none;
+    display: block;
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    padding-left:25px
+}
+
+.IllustThumb .IllustThumbInfoUser .IllustThumbInfoUserImg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #ccc;
+    border-radius: 50px;
+    position:absolute
+}
+
+.IllustThumb .IllustThumbInfo {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    overflow:hidden
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbTitle {
+    display: block;
+    float: left;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    height: 20px;
+    margin-top: 10px;
+    text-align:left
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbTitle cite {
+    font-style:normal
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbTitle .IllustThumbTitleItemNum {
+    font-size:9px
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbCategory {
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: #777;
+    padding: 0 5px;
+    color: #fff;
+    max-width: 132px;
+    white-space: nowrap;
+    margin-left: 44px;
+    display:none
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbCategory a {
+    text-decoration: none;
+    color:#fff
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbCategory a:hover {
+    color:#f90
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbDesc {
+    display: block;
+    float: left;
+    font-size: 10px;
+    line-height: 16px;
+    height: 16px;
+    width: 100%;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: left;
+    margin:2px 0
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbDesc .IllustThumbDescUserName {
+    text-decoration:none
+}
+
+.IllustThumb.Novel .IllustThumbFrame {
+    height: 334px;
+    border-color:#fff
+}
+
+.IllustThumb.Novel .IllustThumbFrame .IllustThumbTitle {
+    display: block;
+    margin: 0 0 5px;
+    font-weight:700
+}
+
+.IllustThumb.Novel .IllustThumbFrame .IllustThumbTitle cite {
+    font-style: normal;
+    font-family:Georgia, 游明朝, yu mincho, YuMincho, hiragino mincho pron, HGS明朝E, メイリオ, Meiryo, SerifJP, serif
+}
+
+.IllustThumb.Novel .IllustThumbFrame .IllustThumbDesc {
+    font-size: 12px;
+    font-family: Georgia, 游明朝, yu mincho, YuMincho, hiragino mincho pron, HGS明朝E, メイリオ, Meiryo, SerifJP, serif;
+    line-height:20px
+}
+
+.IllustThumb.Novel .IllustThumbInfo {
+    display:none
+}
+
+.IllustThumb.NgThumb .IllustThumbFrame {
+    background: #fff url(https://galleria-img.emotionflow.com/img/NGThumb.png_360.jpg) 50% 50% no-repeat;
+    background-size:264px
+}
+
+.IllustThumb.NgThumb .IllustThumbFrame .IllustThumbDisp {
+    opacity: 0;
+    transition:all 300ms 0s ease
+}
+
+.IllustThumb.NgThumb .IllustThumbFrame .IllustThumbDisp:hover {
+    opacity: 1;
+    background-color:#fff
+}
+
+.IllustThumbStatus {
+    display: block;
+    float: left;
+    width: 98%;
+    margin: 1px 2% 0 0%;
+    text-align: right;
+    height: 21px;
+    overflow: hidden;
+    font-size:11px
+}
+
+.IllustThumbEdit {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0;
+    border-bottom: solid 1px #e0e0e0;
+    height: 24px;
+    overflow: hidden;
+    font-size:9px
+}
+
+.IllustThumbEdit .IllustThumbEditCmd {
+    display: block;
+    float: right;
+    margin:0 5px 0 0
+}
+
+.IllustThumbEdit .IllustThumbEditCmd .IllustThumbEditCmdBtn {
+    margin-left: 5px;
+    font-size: 11px;
+    padding:1px 5px
+}
+
+.IllustThumbEdit .IllustThumbEditState {
+    line-height: 24px;
+    margin-left:5px
+}
+
+.ContentsListTitleUser {
+    display: block;
+    float: left;
+    background-color: #fff;
+    margin: 0 0 20px 0;
+    position: relative;
+    min-height: 152px;
+    padding: 10px 0;
+    width:100%
+}
+
+.ContentsListTitleUser.Solo {
+    padding: 10px;
+    width:980px
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 980px;
+    margin:0 auto
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableImg {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0;
+    width:170px
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableImg .ContentsListTitleUserImgFrame {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: solid 4px #f0f0f0;
+    border-radius: 80px;
+    overflow:hidden
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableImg .ContentsListTitleUserImgFrame .ContentsListTitleUserImg {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: none;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color:#a0a095
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo {
+    display: table-cell;
+    vertical-align: top;
+    padding:0
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 158px;
+    overflow:hidden
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserIdParts {
+    display: block;
+    float: left;
+    width:100%
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserIdParts .ContentsListTitleUserIdPartsFrame {
+    display: block;
+    float:left
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserIdParts .ContentsListTitleUserIdPartsFrame .ContentsListTitleUserIdPartsImg {
+    border:none
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    overflow:hidden
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserName {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    margin:0
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserName a {
+    color:#4ae
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserName .ContentsListTitleUserNameId {
+    font-size:16px
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserCmd {
+    display: block;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    margin: 5px 0 7px 20px;
+    overflow:hidden
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserCmd.Selected:hover {
+    border: 1px solid #a8c1d5;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+    color: #fff;
+    background-color: #cedce7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CEDCE7), to(#596a72));
+    background-image: -webkit-linear-gradient(top, #CEDCE7, #596a72);
+    background-image: -moz-linear-gradient(top, #CEDCE7, #596a72);
+    background-image: -ms-linear-gradient(top, #CEDCE7, #596a72);
+    background-image: -o-linear-gradient(top, #CEDCE7, #596a72);
+    background-image: linear-gradient(to bottom, #CEDCE7, #596a72);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#CEDCE7, endColorstr=#596a72)
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserCmd.Selected:hover:before {
+    content: "Unfollow\A";
+    white-space:pre
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserState {
+    display: block;
+    float: left;
+    height: 40px;
+    margin:0
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserState .ContentsListTitleUserStateItem {
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 0 0 15px;
+    text-align: center;
+    text-decoration:none
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserState .ContentsListTitleUserStateItem .ContentsListTitleUserStateItemTitle {
+    display: block;
+    float: none;
+    font-size: 9px;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    white-space:nowrap
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserInfo .ContentsListTitleUserState .ContentsListTitleUserStateItem .ContentsListTitleUserStateItemNum {
+    display: block;
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    white-space:nowrap
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserUrl {
+    display: block;
+    float: left;
+    font-size: 13px;
+    width: 100%;
+    padding: 0;
+    margin: 6px 0 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    font-weight: 400;
+    height: 60px;
+    line-height:20px
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserImgList {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 52px;
+    overflow:hidden
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserImgList .ContentsListTitleUserImgListImgFrame {
+    display: block;
+    float:left
+}
+
+.ContentsListTitleUser .ContentsListTitleUserTable .ContentsListTitleUserTableInfo .ContentsListTitleUserInfoFrame .ContentsListTitleUserImgList .ContentsListTitleUserImgListImgFrame .ContentsListTitleUserImgListImg {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #eeeee5;
+    margin:0 8px 0 0
+}
+
+.ContentsListTitleUser .UserUrlExpandBtn {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 15px;
+    line-height: 15px;
+    font-size: 9px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0 3px;
+    font-style: normal;
+    filter: alpha(opacity=90);
+    -moz-opacity: .9;
+    opacity: .9;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+    font-weight: 700;
+    color:#fff
+}
+
+.ContentsListTitleUser .UserUrlExpandBtn:hover {
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+    color:#fff
+}
+
+.ContentsListMenu {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    text-align: right;
+    margin: 15px 0;
+    box-sizing:border-box
+}
+
+.ContentsListMenu .ContentsListMainMenu {
+    float: left;
+    margin:0
+}
+
+.ContentsListMenu .ContentsListMainMenu .MenuItem {
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 16px;
+    padding: 0 10px;
+    margin: 2px 0 2px 5px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #707065;
+    min-width: 50px;
+    text-align:center
+}
+
+.ContentsListMenu .ContentsListMainMenu .MenuItem.Selected {
+    border: 1px solid #fff;
+    background: #4ae;
+    color:#fff
+}
+
+.ContentsListMenu .ContentsListMainMenu .MenuItem:hover {
+    border: 1px solid #fff;
+    background: #19f;
+    color:#fff
+}
+
+.ContentsListMenu .ContentsListMainMenu .MenuItemEdit {
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 16px;
+    margin: 0 0 20px;
+    margin: 0 0 0 20px;
+    padding:0 10px
+}
+
+.ContentsListMenu .ContentsListSubMenu {
+    float: right;
+    margin: 2px 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border:solid 1px #eee
+}
+
+.ContentsListMenu .ContentsListSubMenu .MenuItem {
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    background: #fff;
+    color: #707065;
+    min-width: 60px;
+    text-align: center;
+    margin: 0;
+    padding:0 5px
+}
+
+.ContentsListMenu .ContentsListSubMenu .MenuItem.Selected {
+    background: #4ae;
+    color:#fff
+}
+
+.ContentsListMenu .ContentsListSubMenu .MenuItem:hover {
+    background: #19f;
+    color:#fff
+}
+
+.ContentsListTitleResult {
+    float: left;
+    text-align: left;
+    width: 100%;
+    border-bottom: none;
+    padding: 0 20px;
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    box-sizing:border-box
+}
+
+.ContentsListTitleResult .ResultTitle {
+    display: block;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #fff;
+    margin: 0;
+    padding:0
+}
+
+.ContentsListTitleResult .ResultCmd {
+    display: block;
+    float: left;
+    height: 34px;
+    margin: 0 0 0 15px;
+    font-size:0
+}
+
+.ContentsListTitleResult .ResultCmd .ResultCmdBtn {
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin: 6px 0 6px 10px;
+    font-size: 14px;
+    font-weight:700
+}
+
+.ContentsListTitleResult .ResultCmd .ResultCmdBtn .fa {
+    font-weight:700
+}
+
+#Contents .ContentsListTitle {
+    float: left;
+    width: 100%;
+    padding:0
+}
+
+.PvListWrapper {
+    float: left;
+    width:100%
+}
+
+.PvList {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: 0;
+    background:#fff
+}
+
+.PvList td {
+    border: solid 1px #a0a095;
+    font-size: 9px;
+    margin: 0;
+    padding:3px
+}
+
+.PvList .PvContents {
+    width:56px
+}
+
+.PvList .PvContents .PvContentsUrl {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    overflow:hidden
+}
+
+.PvList .PvContents .PvContentsUrl .PvContentsUrlImg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border:none
+}
+
+.PvList .PvCount {
+    width:120px
+}
+
+.PvList .PvGraph .GraphBarTotal {
+    height: 12px;
+    background: #ccc;
+    white-space: nowrap;
+    overflow:hidden
+}
+
+.PvList .PvGraph .GraphBarTotal .GraphBarUnique {
+    height: 12px;
+    background: #aaa;
+    white-space: nowrap;
+    overflow:hidden
+}
+
+.PvList .PvGraph .GraphBarUrl {
+    display: block;
+    margin-top: 3px;
+    margin-left:3px
+}
+
+table.HeartList {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 380px;
+    text-align: center;
+    border-spacing: 0;
+    background:#fff
+}
+
+table.HeartList td {
+    border: solid 1px #909085;
+    height: 2px;
+    font-size: 8px;
+    padding: 0;
+    margin:0
+}
+
+table.HeartList td.HeartDate {
+    width:80px
+}
+
+table.HeartList td.HeartAddr {
+    text-align: left;
+    padding:3px
+}
+
+table.HeartList td.HeartAddr .HeartAddrMsg {
+    display: block;
+    margin-left: 5px;
+    font-size: 12px;
+    height: 31px;
+    line-height: 31px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis
+}
+
+table.HeartList td.HeartAddr .HeartImageUrl {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    border: none;
+    background-position: 50% 50%;
+    background-repeat:no-repeat
+}
+
+table.HeartList td.HeartAddr .HeartAddrUrl {
+    display: block;
+    margin-left: 5px;
+    height:16px
+}
+
+#LoginForm {
+    font-size: 12px;
+    padding: 20px;
+    width: 360px;
+    margin:0 auto
+}
+
+#LoginForm table {
+    width:100%
+}
+
+#LoginForm a {
+    text-decoration:underline
+}
+
+#LoginForm a:hover {
+    text-decoration:underline
+}
+
+#LoginForm h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom:8px
+}
+
+#LoginForm div {
+    font-size:11px
+}
+
+#LoginForm label {
+    font-weight: 700;
+    font-size:14px
+}
+
+#LoginForm .small {
+    color: #666;
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    text-align:center
+}
+
+#LoginForm .spacer {
+    clear: both;
+    height:0
+}
+
+#LoginForm input {
+    font-size: 14px;
+    font-weight: 700;
+    border: solid 1px #a0a095;
+    margin: 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+    height:32px
+}
+
+#LoginForm button {
+    clear: both;
+    width: 125px;
+    font-size:16px
+}
+
+.SettingListItem, .SettingListItem.Additional {
+    float: left;
+    width: 90%;
+    border-bottom: solid 1px #d0d0c5;
+    background: #fff;
+    padding: 10px 5% 20px;
+    overflow:hidden
+}
+
+.SettingListItem.Additional {
+    border-bottom: none;
+    text-align:right
+}
+
+.SettingListTitle {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align:left
+}
+
+.SettingBody {
+    float: left;
+    width:100%
+}
+
+.PlugInCode {
+    float: left;
+    width: 100%;
+    margin:15px 0 0
+}
+
+.embed_code {
+    font-size: 11px;
+    width:100%
+}
+
+.PageBar {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    text-align:center
+}
+
+.PageBar .PageBarItem {
+    margin: 0 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    overflow:hidden
+}
+
+.PageBar .PageBarItem.Selected {
+}
+
+.LinkBtn {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    font-size: 11px;
+    padding: 0 10px;
+    margin: 0 23px 7px 10px;
+    background: #c0c0b5;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -webkit-border-top-left-radius: 2px;
+    border-top-left-radius:2px
+}
+
+.LinkBtn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 5px;
+    height: 16px;
+    background:#c0c0b5
+}
+
+.LinkBtn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -23px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #c0c0b5;
+    border-style: solid;
+    border-width:8px 2px 8px 10px
+}
+
+.LinkBtn:hover, .LinkBtn:hover:after {
+    background: #19f;
+    color:#fff
+}
+
+.LinkBtn:hover:before {
+    border-color:transparent transparent transparent #19f
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes {
+    float: right;
+    text-align: right;
+    margin-left:4px
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResHeart, .IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResStar {
+    display: inline-block;
+    text-align: center;
+    margin: 3px 7px 2px 3px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background:transparent url(https://galleria-img.emotionflow.com/img/LoginInfoMenuLogin10.png) no-repeat
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResHeart {
+    background-position:-300px 0
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResHeart.Selected, .IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResHeart:hover {
+    background-position:-300px -30px
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResStar {
+    background-position:-90px 0
+}
+
+.IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResStar.Selected, .IllustThumb .IllustThumbInfo .IllustThumbRes .IllustThumbResStar:hover {
+    background-position:-90px -30px
+}
+
+.IllustThumb .IllustUserInfo {
+    float: left;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    border-top:solid 1px #fff
+}
+
+.IllustThumb .IllustUserInfo .IllustThumbInfoUser {
+    display: table-cell;
+    width: 50px;
+    height:50px
+}
+
+.IllustThumb .IllustUserInfo .IllustThumbInfoUser .IllustThumbInfoUserImg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding:5px
+}
+
+.IllustThumb .IllustUserInfo .IllustThumbInfoDesc {
+    display: table-cell;
+    vertical-align:bottom
+}
+
+.IllustThumb .IllustUserInfo .IllustThumbInfoUserName {
+    display: block;
+    font-size: 11px;
+    color: #909085;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .9);
+    height: 17px;
+    overflow:hidden
+}
+
+.IllustThumb .IllustUserInfo .IllustThumbInfoUserFollowBtn {
+    font-size: 15px;
+    margin-bottom:5px
+}
+
+#CategoryPane {
+    display: table-cell;
+    float: none;
+    padding: 15px 0;
+    width:190px
+}
+
+.CategoryList {
+    display: block;
+    float: left;
+    width: 170px;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    list-style:none
+}
+
+.CategoryList li {
+    display: block;
+    width: 100%;
+    float:left
+}
+
+.CategoryList .CategoryItem {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .9);
+    font-weight:700
+}
+
+.CategoryList .CategoryItem.Selected, .CategoryList .CategoryItem:hover {
+    color:#f90
+}
+
+.CategoryList .CategoryItem.Space {
+    height: 10px;
+    line-height:10px
+}
+
+.CategoryList .CategoryItem.Layer0 {
+    margin-left:0
+}
+
+.CategoryList .CategoryItem.Layer1 {
+    margin-left:10px
+}
+
+.CategoryList .CategoryItem.Layer2 {
+    margin-left:25px
+}
+
+.CategoryList .CategoryItem.Layer3 {
+    margin-left:40px
+}
+
+.MesWin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index:100
+}
+
+.MesWin .MesWinFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 140px;
+    padding: 20px;
+    background: #fff;
+    border: solid 1px #aaa;
+    text-align:right
+}
+
+.MesWin .MesTxt {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    text-align:left
+}
+
+.MesWin .MesNum {
+    margin:5px 0 10px
+}
+
+.MesWin .MesBtnSkip, .MesWin .MesBtnOk {
+    margin:0 0 0 10px
+}
+
+.IllustTagList {
+    display: block;
+    float: left;
+    margin:10px 0 0
+}
+
+.IllustTagList .IllustTag {
+    display: inline-block;
+    max-width: 280px;
+    line-height: 28px;
+    position: relative;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 10px 7px 14px;
+    background: #2af;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius:4px
+}
+
+.IllustTagList .IllustTag:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-color: transparent #2af transparent transparent;
+    border-style: solid;
+    border-width:14px 14px 14px 0
+}
+
+.IllustTagList .IllustTag:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    -moz-box-shadow: -1px -1px 2px #004977;
+    -webkit-box-shadow: -1px -1px 2px #004977;
+    box-shadow:-1px -1px 2px #004977
+}
+
+.IllustTagList .IllustTag:hover {
+    background:#19f
+}
+
+.IllustTagList .IllustTag:hover:before {
+    border-color:transparent #19f transparent transparent
+}
+
+.IllustTagList .IllustTag .IllustTagTxt {
+    display: block;
+    float: left;
+    height: 28px;
+    max-width: 215px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0 8px 0 10px;
+    overflow:hidden
+}
+
+.IllustTagList .IllustTag.MyTag {
+    background:#f09090
+}
+
+.IllustTagList .IllustTag.MyTag:before {
+    border-color:transparent #f09090 transparent transparent
+}
+
+.IllustTagList .IllustTag.MyTag:after {
+    -moz-box-shadow: -1px -1px 2px #784848;
+    -webkit-box-shadow: -1px -1px 2px #784848;
+    box-shadow:-1px -1px 2px #784848
+}
+
+.NotifyItem {
+    display: block;
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: 10px;
+    margin: 0 auto 10px;
+    background: #fff;
+    text-decoration: none;
+    box-sizing:border-box
+}
+
+.NotifyItem .NotifyItemBody {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin:0 0 0 40px
+}
+
+.NotifyItem .NotifyItemDate {
+    display: block;
+    font-size:15px
+}
+
+.Ad3Tile {
+    float: left;
+    width: 100%;
+    border: none;
+    margin-top: 9px
+}
