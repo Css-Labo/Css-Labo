@@ -1,0 +1,26 @@
+ログイン画面
+
+ログイン：入力されたmailとpassでuser_tblからユーザー情報取得、判定
+新規登録：mail,pass,nameをuser_tblに追加
+
+ホーム画面
+
+タイムライン：現在投稿されているcssをcss_tblから取得、疑似的に最新順にするため、css_idの降順で表示
+いいね：押下したcss_idのcss_likeを+1
+コメント：押下したcss_idのcommentをcomment_tblから取得
+検索：入力された名前でcss_tblのcss_nameを%a%のlike検索
+絞り込み：指定されたタグのみをcss_tblから取得
+いいね昇順：css_tblのcss_likeをorder byで取得
+いいね降順：css_tblのcss_likeをorder by descで取得
+
+投稿画面
+
+投稿：入力されたcss_name,css_code,css_tag,css_imgをcss_tblに追加
+
+お気に入り画面
+
+お気に入り表示：bookmark_tblをログインしているidで検索し、ヒットしたcss_idを取得、表示
+
+自分の投稿画面
+
+mypost:css_tblのcreater_idをログインしているidで検索し、ヒットしたcss_name,css_code,css_img,css_tag,css_likeを取得
