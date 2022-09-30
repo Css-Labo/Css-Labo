@@ -668,7 +668,7 @@
 
 <body>
 	<script type="text/javascript">
-		<!--
+		
 		function UpdateNotify() {
 			$.getJSON("/FGetNotifyV.jsp", {
 				"ID": 122727
@@ -714,30 +714,24 @@
 		}
 	</script>
 	<div id="UploadMsg"
-		style="position: fixed; z-index: 99999; top:74px; left: 0px; width:100%;padding: 20px 0; background:rgba(0, 0, 0, 0.6); text-align: center;font-size:16px;font-weight: bold;color:#fff; display: none;">
+		style="position: fixed;
+		z-index: 99999;
+		top:74px;
+		left: 0px;
+		width:100%;
+		padding: 20px 0; 
+		background:rgba(0, 0, 0, 0.6); 
+		text-align: center;
+		font-size:16px;
+		font-weight: bold;
+		color:#fff; 
+		display: none;">
 	</div>
-	<div class="Wrapper Narrow">
-			<div class="ContentsListIllustThumb" id="grid-content">
 				<div class="ContentsListTitleResult">
 					<h1 class="ResultTitle" style="display: inline; float: none;">作品を投稿</h1>
 				</div>
 				<ul id="IllustTimeLine" class="IllustTimeLine">
 					<li class="TimeLineItemAdd">
-						<div class="UpSelector">
-							<a class="UpSelectorItem Selected" href="javascript:void(0);">
-								<span class="fa fa-picture-o"></span>
-								イラスト</a>
-							<a class="UpSelectorItem" href="/EditNovelV.jsp?ID=122727">
-								<span class="fa fa-book"></span>
-								小説</a>
-							<a class="UpSelectorItem" href="/EditAnimatedGifV.jsp?ID=122727">
-								<span class="fa fa-play-circle"></span>
-								アニGIF</a>
-							<a class="UpSelectorItem" href="/EditMangaV.jsp?ID=122727">
-								<span class="IconManga"></span>
-								マンガ</a>
-						</div>
-
 						<div class="TimeLineUser">
 							<a href="/122727/gallery.html">
 								<img class="TimeLineUserImg"
@@ -758,47 +752,12 @@
 						<div class="TimeLineIllust">
 							<div class="TimeLineIllustDescFrame">
 								<textarea id="DescriptionEdit" class="TimeLineIllustDesc"
-									placeholder="キャプション(省略可) &#13;&#10;#でタグ、##でカテゴリタグ" onkeyup="DispDescCharNum()"
+									placeholder="作品説明＆コメント(省略可) &#13;&#10;#でタグ、##でカテゴリタグ" onkeyup="DispDescCharNum()"
 									onfocus="ResizeDesc(this, 300)" maxlength="100000"></textarea>
 								<span id="DescriptionCharNum" class="TimeLineIllustDescNum">100000</span>
-								<div id="ConnetctInfo" class="ConnetctInfo">
-									<span class="Title">タグをつけると関連する作品にコネクトすることができます。</span>
-									<span class="Connet"><span id="ConnetNum" class="ConnetNum">0</span> 作品とコネクト中</span>
-								</div>
-								<div class="DescTagHint">
-									<div id="TagCmdDesc" class="TagCmdDesc">
-										<span class="TagHintTitle">注目のタグ</span>
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #オリジナル');DispDescCharNum();">#オリジナル</span></span>
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #創作');DispDescCharNum();">#創作</span></span>
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #オリキャラ');DispDescCharNum();">#オリキャラ</span></span>
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #過去絵を晒す');DispDescCharNum();">#過去絵を晒す</span></span>
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #女の子');DispDescCharNum();">#女の子</span></span>
-									</div>
-									<div class="TagCmdDescDetail">
-										<span class="TagHintTitle">コマンドタグ</span> - 特別な動作をするタグです<br />
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #すぐに消す');DispDescCharNum();">#すぐに消す</span>
-											: 1時間後に自動削除。 Twitterからも削除</span><br />
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #24H');DispDescCharNum();">#24H</span>
-											: 24時間後に自動削除。 Twitterからも削除</span><br />
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #そのうち消す');DispDescCharNum();">#そのうち消す</span>
-											: 数週間程度で自動削除。 Twitterからも削除</span><br />
-										<span class="TagHint"><span class="TagName"
-												onclick="insertAtCaret($('#DescriptionEdit'), ' #いつか消す');DispDescCharNum();">#いつか消す</span>
-											: 数ヶ月程度で自動削除。 Twitterからも削除</span><br />
-									</div>
-								</div>
 							</div>
 							<div class="TimeLineIllustCmd">
 								<span id="file-drop-area"></span>
-
 								<a id="TimeLineAddImage" class="TimeLineIllustCmdItem BtnBase Light"
 									style="width: 100%; box-sizing: border-box;" href="javascript:void(0)">
 									<span class="fa fa-files-o"></span>
@@ -808,51 +767,6 @@
 						</div>
 						<span class="CommentList">
 							<span class="CommentListCmd">
-								<div class="RightsItem">
-									<div class="RightsLabel">Twitterに投稿</div>
-									<div class="onoffswitch OnOff">
-										<a href="/EditSettingV.jsp?ID=122727"
-											style="line-height: 24px; font-size: 10px;">連携設定</a>
-									</div>
-								</div>
-								<div class="RightsItem">
-									<div class="RightsLabel">新着避け</div>
-									<div class="onoffswitch OnOff">
-										<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
-											id="NgNewArrival" value="0">
-										<label class="onoffswitch-label" for="NgNewArrival">
-											<span class="onoffswitch-inner"></span>
-											<span class="onoffswitch-switch"></span>
-										</label>
-									</div>
-								</div>
-								<div class="RightsItem">
-									<div class="RightsLabel">検索避け</div>
-									<div class="onoffswitch OnOff">
-										<input type="checkbox" name="NGS" class="onoffswitch-checkbox" id="NGS"
-											value="0">
-										<label class="onoffswitch-label" for="NGS">
-											<span class="onoffswitch-inner"></span>
-											<span class="onoffswitch-switch"></span>
-										</label>
-									</div>
-								</div>
-								<div class="RightsItem">
-									<div class="RightsLabel">サムネ非表示</div>
-									<div class="onoffswitch OnOff">
-										<input type="checkbox" name="NGT" class="onoffswitch-checkbox" id="NGT"
-											value="0">
-										<label class="onoffswitch-label" for="NGT">
-											<span class="onoffswitch-inner"></span>
-											<span class="onoffswitch-switch"></span>
-										</label>
-									</div>
-								</div>
-								<div class="RightsItem">
-									<div class="RightsLabel">詳細設定</div>
-									<a class="CommentListItem OptionDetailBtn fa fa-ellipsis-h"
-										href="javascript:void(0)" onclick="$('#OptionDetail').slideToggle(200)"></a>
-								</div>
 								<a class="TimeLineUploadBtn BtnBase Light CommentListBtn" href="javascript:void(0)"
 									onclick="UploadFiles();"><span class="fa fa-upload"></span> <span
 										class="Label">投稿</span></a>
@@ -982,11 +896,9 @@
 						</span>
 					</li>
 				</ul>
-			</div>
 		<div class="PageBar">
 			<a class="BtnBase PageBarItem" href="/MyHome.jsp?ID=122727&TD=458643">&gt;</a>
 		</div>
-	</div>
 	<div style="clear: both;"></div>
 </body>
 </html>
