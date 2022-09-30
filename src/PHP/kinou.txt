@@ -9,7 +9,7 @@
 いいね：押下したcss_idのcss_likeを+1
 コメント：押下したcss_idのcommentをcomment_tblから取得
 検索：入力された名前でcss_tblのcss_nameを%a%のlike検索
-絞り込み：指定されたタグのみをcss_tblから取得
+絞り込み：指定されたタグのみをcss_tblから取得(絞り込み解除はタイムラインを動かす)
 いいね昇順：css_tblのcss_likeをorder byで取得
 いいね降順：css_tblのcss_likeをorder by descで取得
 
