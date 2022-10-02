@@ -52,6 +52,7 @@ $jscomp.polyfill("Array.prototype.find", function(a) {
 var _load_next = !1,
     _$current_html = null;
 function getNextData(a) {
+    $("#IllustTimeLine").append($("<div />").addClass("LoadingInfo").append($("<img />").attr("src", "/img/loading.gif")));
     $.ajaxSingle({
         type: "get",
         url: a,
@@ -85,3 +86,4 @@ $(function() {
         }
     })
 });
+z
