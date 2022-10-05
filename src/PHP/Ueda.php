@@ -79,5 +79,18 @@
             $ps->execute();
             return $ps;
         }
+
+        //投稿画面の投稿
+        public function InsertCss($id,$name,$img,$code,$tag){
+            $pdo = $this->dbConnect();
+            $sql = "INSERT INTO csslabo (creater_id,css_name,css_img,css_code,css_tag,css_like) VALUES(?,?,?,?,?,0)";
+            $ps = $pdo->prepare($sql);
+            $ps->bindValue(1,$id,PDO::PARAM_INT);
+            $ps->bindValue(2,$name,PDO::PARAM_STR);
+            $ps->bindValue(3,$img,PDO::PARAM_STR);
+            $ps->bindValue(4,$code,PDO::PARAM_STR);
+            $ps->bindValue(5,$tag,PDO::PARAM_STR);
+            $ps->execute();
+        }
     }
 ?>
