@@ -10,16 +10,18 @@ CREATE TABLE user_tbl(
 );
 
 //CSSテーブル
-CREATE TABLE css_tbl(
-    css_id      INT         AUTO_INCREMENT,
-    creater_id INT        NOT NULL,
-    css_name    VARCHAR(20) NOT NULL    ,
-    css_img     MEDIUMBLOB  NOT NULL    ,
-    css_code    VARCHAR(3000) NOT NULL  ,
-    css_tag     VARCHAR(100)            ,
-    css_like    INT         default 0   ,
-    PRIMARY KEY (css_id),
-    FOREIGN KEY (creater_id)   REFERENCES  user_tbl(user_id)
+CREATE TABLE css_tbl( 
+    css_id INT AUTO_INCREMENT, 
+    creater_id INT NOT NULL, 
+    css_name VARCHAR(20) NOT NULL ,
+    css_img MEDIUMBLOB NOT NULL ,
+    css_Hcode VARCHAR(3000) NOT NULL ,
+    css_Ccode VARCHAR(3000) NOT NULL ,
+    css_tag VARCHAR(100) ,
+    css_info VARCHAR(3000) NOT NULL ,
+    css_like INT default 0 ,
+    PRIMARY KEY (css_id),    
+    FOREIGN KEY (creater_id) REFERENCES user_tbl(user_id) 
 );
 
 //お気に入りテーブル
