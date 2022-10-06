@@ -1,0 +1,1280 @@
+@charset "utf-8";
+#CategoryPane {
+    display:none
+}
+
+.ContentsListIllustThumb {
+    width: 640px;
+    padding:15px 0
+}
+
+.IllustTimeLine {
+    display: block;
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin:0
+}
+
+.TimeLineItem, .TimeLineItemAdd {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0 0 30px;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(150, 150, 150, .5);
+    border-radius:6px
+}
+
+.TimeLineItem:last-child {
+    margin-bottom:0
+}
+
+.TimeLineUser {
+    display: block;
+    float: left;
+    width: 600px;
+    padding: 20px 20px 10px;
+    min-height: 50px;
+    border-bottom:solid 1px #eee
+}
+
+.TimeLineUser a {
+    display: block;
+    float: left;
+    text-decoration:none
+}
+
+.TimeLineUserImg {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right:10px
+}
+
+.TimeLineUserName {
+    display: block;
+    float: left;
+    width: 540px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight:700
+}
+
+.TimeLineDate {
+    display: block;
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    line-height:12px
+}
+
+.TimeLineIllustTitleFrame {
+    display: block;
+    float: left;
+    width: 540px;
+    min-height: 36px;
+    line-height:36px
+}
+
+.TimeLineIllustTitleFrame .TimeLineIllustTitle {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    vertical-align:middle
+}
+
+.TimeLineIllustTitleFrame .TimeLineIllustTitleCmdList {
+    display: block;
+    float: right;
+    height: 26px;
+    margin:4px 0
+}
+
+.TimeLineIllustTitleFrame .TimeLineIllustTitleCmdList .TimeLineIllustTitleCmd, .TimeLineIllustHeart .TimeLineIllustTitleCmdList .TimeLineIllustTitleCmd {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    vertical-align: top;
+    font-size: 16px;
+    cursor: pointer;
+    position:relative
+}
+
+.TimeLineIllust {
+    display: block;
+    float: left;
+    width: 600px;
+    padding:10px 20px
+}
+
+.TimeLineIllustBtn {
+}
+
+timelineillustbtn.Twitter {
+}
+
+.TimeLineIllustLabelBtn {
+    display: inline-block;
+    min-width: 100px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 15px;
+    margin: 0 15px;
+    vertical-align: top;
+    font-size:16px
+}
+
+.TimeLineIllustLabelBtn .Label {
+    font-size:12px
+}
+
+.TimeLineIllustLabelBtn.Large {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    min-width: 0;
+    padding: 0;
+    font-size:20px
+}
+
+.TimeLineIllustLabelBtn.Large .Label {
+    display:none
+}
+
+.IllustThumbDisp {
+    display: block;
+    float: left;
+    width:100%
+}
+
+.TimeLineIllustSeries {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    font-size: 12px;
+    text-align:right
+}
+
+.TimeLineIllustDesc {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight:400
+}
+
+.TimeLineIllustImage {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 15px 0 0;
+    text-align:center
+}
+
+.TimeLineIllustImage.Ext {
+    display:none
+}
+
+.TimeLineIllustImageFile {
+    display: inline-block;
+    max-width:100%
+}
+
+.TimeLineIllustImageFile.Save {
+    -webkit-touch-callout: none;
+    pointer-events: none;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select:none
+}
+
+.TimeLineIllustImageText {
+    display: block;
+    float: none;
+    width: 800px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-size:16px
+}
+
+.TimeLineIllustImageText.Ext {
+    display:none
+}
+
+.TimeLineIllustImageText .TimeLinePasswordTxt {
+    width: 200px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    vertical-align:middle
+}
+
+.TimeLineIllustImageText .TimeLinePasswordBtn {
+    box-sizing: border-box;
+    padding: 0 15px;
+    height: 26px;
+    line-height: 26px;
+    margin: 1px 0;
+    vertical-align:middle
+}
+
+.TimeLineIllustImageExtBtnFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align:center
+}
+
+.TimeLineIllustImageExtBtnFrame .TimeLineIllustImageExtBtn {
+    width: 150px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom:15px
+}
+
+.TimeLineIllustHeart {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 42px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position:relative
+}
+
+.TimeLineIllustHeart .TimeLineIllustTitleCmdList {
+    display: block;
+    height: 26px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right:0
+}
+
+.TimeLineIllustHeart .TimeLineIllustTitleCmdList .TimeLineIllustTitleCmd {
+}
+
+.TimeLineIllustHeart .TimeLineIllustTitleCmdList .TimeLineIllustTitleCmd.Comment {
+    width: auto;
+    padding:0 5px
+}
+
+.TimeLineIllustHeart .TimeLineIllustTitleCmdList .TimeLineIllustTitleCmd.Comment .TimeLineIllustTitleCmdNum {
+    font-size:14px
+}
+
+.IllustHeartList {
+    display: block;
+    width: 100%;
+    float: left;
+    margin:20px 0 0
+}
+
+.IllustHeartList .IllustHeartItem {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin:4px
+}
+
+.IllustHeartList {
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 10px 20px;
+    box-sizing:border-box
+}
+
+.IllustHeartList:after, .IllustHeartList:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events:none
+}
+
+.IllustHeartList:after {
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-width: 20px;
+    margin-left:-20px
+}
+
+.IllustHeartList:before {
+    border-color: transparent;
+    border-bottom-color: #eee;
+    border-width: 21px;
+    margin-left:-21px
+}
+
+.IllustHeartList .IllustHeartListMsg {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align:center
+}
+
+.CommentList {
+    width: 600px;
+    float: left;
+    margin: 0;
+    padding-top:0
+}
+
+.CommentList .CommentItem .CommentItemUser {
+    width:45px
+}
+
+.SideBar .SideBarBody {
+    padding: 18px;
+    width: 300px;
+    background-color:#fff
+}
+
+.SideBarBookmark {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    overflow:hidden
+}
+
+.SideBarBookmark .SideBarBookmarkImg {
+    display: block;
+    width: 100px;
+    height:100px
+}
+
+.SideBarUser {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    overflow:hidden
+}
+
+.SideBarUser .SideBarUserImg {
+    display: block;
+    flex: 0 0 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border-radius: 50px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration:none
+}
+
+.SideBarUser .SideBarUserNickName {
+    display: block;
+    flex: 1 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    text-decoration:none
+}
+
+.SideBarUser .SideBarUserCmd {
+    display: block;
+    flex: 0 0 90px;
+    box-sizing: border-box;
+    height: 23px;
+    padding: 0;
+    line-height: 21px;
+    margin:8px 0
+}
+
+.qq-gallery.qq-uploader {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+    min-height: auto;
+    background: 0 0;
+    max-height:none
+}
+
+.qq-gallery .qq-upload-list {
+    padding: 0;
+    max-height:none
+}
+
+.qq-gallery .qq-total-progress-bar-container {
+    display:none
+}
+
+.qq-gallery .qq-upload-list li {
+    margin: 8px;
+    height: 120px;
+    padding: 7px;
+    box-shadow:0 0 1px 0 rgba(0, 0, 0, .22)
+}
+
+.qq-gallery .qq-file-info {
+    display:none
+}
+
+.qq-upload-retry-selector qq-upload-retry {
+    display:none
+}
+
+.qq-gallery .qq-upload-fail .qq-upload-status-text {
+    display:none
+}
+
+.qq-gallery .qq-upload-retry {
+    display:none
+}
+
+.qq-gallery .qq-thumbnail-wrapper {
+}
+
+.TimeLineItemAdd {
+}
+
+.TimeLineItemAdd .TimeLineSelectorItem {
+    display: block;
+    float:left
+}
+
+.TimeLineItemAdd .TimeLineIllustTitle {
+    font-weight: 400;
+    font-size:16px
+}
+
+.TimeLineItemAdd .IllustTitleEdit {
+    display: block;
+    float: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 27px;
+    margin: 5px 0 0;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    padding: 0 5px;
+    line-height:25px
+}
+
+.TimeLineItemAdd .IllustTitleEdit:placeholder-shown {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .IllustTitleEdit::-webkit-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .IllustTitleEdit::-moz-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .IllustTitleEdit:-ms-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+#TitleEditFrame {
+    display:none
+}
+
+.TimeLineItemAdd .TitleCharNum {
+    display: block;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 11px;
+    margin-left:5px
+}
+
+.TimeLineItemAdd .TimeLineIllustCmd {
+    display: block;
+    float: left;
+    width: 100%;
+    margin:15px 0
+}
+
+.TimeLineItemAdd .TimeLineIllustCmd .TimeLineIllustCmdItem {
+    display: block;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0;
+    font-weight:700
+}
+
+.TimeLineItemAdd .TotalSize {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: right;
+    font-size: 10px;
+    padding: 0;
+    line-height:20px
+}
+
+.TimeLineItemAdd .TimeLineIllustDescFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius:3px
+}
+
+.TimeLineItemAdd .TimeLineIllustDesc {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    border-radius:3px
+}
+
+.TimeLineItemAdd .TimeLineIllustDesc:placeholder-shown {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .TimeLineIllustDesc::-webkit-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .TimeLineIllustDesc::-moz-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .TimeLineIllustDesc:-ms-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.TimeLineItemAdd .TimeLineIllustDescNum {
+    display: block;
+    width: 100%;
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    font-size: 11px;
+    text-align:right
+}
+
+.TimeLineItemAdd .TagCmdDesc {
+    display: block;
+    float: left;
+    width: 100%;
+    margin:0
+}
+
+.TimeLineItemAdd .TagCmdDescDetail {
+    display: none;
+    float: left;
+    width: 100%;
+    margin: 7px 0 0;
+    line-height:17px
+}
+
+.TimeLineItemAdd .DescTagHint {
+    display: block;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+    background-color:#f9f9f9
+}
+
+.TimeLineItemAdd .DescTagHint .TagHintTitle {
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 3px 0 0;
+    font-size:11px
+}
+
+.TimeLineItemAdd .DescTagHint .TagHint {
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 11px;
+    margin:0 5px 0 0
+}
+
+.TimeLineItemAdd .DescTagHint .TagHint .TagName {
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+    background: #fff;
+    border-radius: 2px;
+    border: solid 1px #eee;
+    padding: 0 2px;
+    font-size: 11px;
+    margin: 0 1px 0 0;
+    cursor: pointer;
+    color:#6495ed
+}
+
+.TimeLineItemAdd .DescTagHint .TagHint.MyTag .TagName {
+    color:#f09090
+}
+
+.TimeLineItemAdd .ConnetctInfo {
+    display: none;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+    background-color:#f0f0f0
+}
+
+.TimeLineItemAdd .ConnetctInfo .Title {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size:11px
+}
+
+.TimeLineItemAdd .ConnetctInfo .Connet {
+    display: block;
+    float: right;
+    height: 25px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: 700;
+    font-size:12px
+}
+
+.TimeLineItemAdd .ConnetctInfo .Connet .ConnetNum {
+    font-size:16px
+}
+
+.TimeLineItemAdd .CommentList {
+}
+
+.TimeLineItemAdd .CommentListCmd {
+    display: block;
+    float: right;
+    width:auto
+}
+
+.TimeLineItemAdd .CommentListCmd .CommentListItem {
+    display: block;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    margin:0 10px
+}
+
+.TimeLineItemAdd .CommentListCmd .CommentListBtn {
+    padding: 7px 15px;
+    font-size: 14px;
+    margin:4px 0 0 10px
+}
+
+.TimeLineItemAdd .CommentListCmd .CommentListItem.OptionDetailBtn {
+    float: none;
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    padding: 2px 10px 0;
+    margin:0
+}
+
+.TimeLineItemAdd .OptionDetail {
+    display: none;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin:0
+}
+
+.EditItem {
+    display: block;
+    float: left;
+    width:100%
+}
+
+.EditItem .OptionDetailTitle {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin:20px 0 5px
+}
+
+.PasswordOpenId {
+    display: block;
+    float: left;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 26px;
+    margin: 0;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    padding:1px 5px
+}
+
+.PasswordOpenId:placeholder-shown {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PasswordOpenId::-webkit-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PasswordOpenId::-moz-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PasswordOpenId:-ms-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PostDate {
+    display: block;
+    float: left;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 26px;
+    margin: 0;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    padding:1px 5px
+}
+
+.PostDate:placeholder-shown {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PostDate::-webkit-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PostDate::-moz-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PostDate:-ms-input-placeholder {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.PostDateClearBtn {
+    box-sizing: border-box;
+    height: 24px;
+    padding: 0 10px;
+    line-height: 22px;
+    margin:1px 0 1px 10px
+}
+
+.RightsItem {
+    display: block;
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    font-size:0
+}
+
+.RightsItem .RightsLabel {
+    text-align: center;
+    font-size: 9px;
+    line-height:12px
+}
+
+.RightsItem .onoffswitch {
+    display:inline-block
+}
+
+.RightsItem.disabled .onoffswitch .onoffswitch-inner:before, .RightsItem.disabled .onoffswitch .onoffswitch-inner:after {
+    background-color:#eee
+}
+
+.RightsDetail {
+    font-size: 11px;
+    display: block;
+    margin:0
+}
+
+.TimeLineItem.Novel .TimeLineIllustTitle {
+    font-family:Georgia, 游明朝, yu mincho, YuMincho, hiragino mincho pron, HGS明朝E, メイリオ, Meiryo, SerifJP, serif
+}
+
+.TimeLineItem.Novel .IllustThumbDisp {
+}
+
+.TimeLineItem.Novel .TimeLineIllustDesc, .TimeLineItem.Novel .TimeLineIllustImageText, .TimeLineItem.Novel .TimeLineIllustSeries {
+    font-family:Georgia, 游明朝, yu mincho, YuMincho, hiragino mincho pron, HGS明朝E, メイリオ, Meiryo, SerifJP, serif
+}
+
+.TimeLineItem.Novel .TimeLineIllustDesc, .TimeLineItem.Novel .TimeLineIllustImageText {
+    font-size: 17px;
+    line-height: 30px;
+    text-align:left
+}
+
+.TimeLineItem.NovelFull .TimeLineIllustSeries {
+    font-style:italic
+}
+
+.TimeLineItem.NovelFull .TimeLineIllustDesc {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+    margin:0
+}
+
+.TimeLineItem.NovelFull .TimeLineIllustDesc:after {
+    content: '';
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 50px 25%;
+    border-bottom:solid 1px #999
+}
+
+.TimeLineItem.NovelFull .NovelCoverFrame {
+    display: block;
+    float: left;
+    width: 100%;
+    margin:0 0 15px
+}
+
+.TimeLineItem.NovelFull .NovelCoverFrame .NovelCoverImage {
+    max-width:100%
+}
+
+.TimeLineIllust .IllustInfoAchieve {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin:0
+}
+
+.TimeLineIllust .IllustInfoAchieve .AchieveItem {
+    display: block;
+    float: left;
+    width: 218px;
+    padding: 2px 5px;
+    margin: 5px 0 15px 52px;
+    font-size: 10px;
+    background: #4ae;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    border:double 7px #fff
+}
+
+.TimeLineIllust .IllustInfoAchieve .AchieveItem:first-child {
+    margin:0 0 0 32px
+}
+
+.TimeLineItem.NgThumb .TimeLineIllustImage {
+    background:#fff url(https://galleria-img.emotionflow.com/img/NGThumb.png_360.jpg) 50% 50% no-repeat
+}
+
+.TimeLineItem.NgThumb .TimeLineIllustImage .TimeLineIllustImageFile {
+    opacity: 0;
+    transition:all 300ms 0s ease
+}
+
+.TimeLineItem.NgThumb .TimeLineIllustImage .TimeLineIllustImageFile:hover {
+    opacity:1
+}
+
+.TimeLineItem.NgThumb.Novel .IllustThumbDisp {
+    background:#fff url(https://galleria-img.emotionflow.com/img/NGThumb.png_360.jpg) 50% 50% no-repeat
+}
+
+.TimeLineItem.NgThumb.Novel .IllustThumbDisp .TimeLineIllustDesc {
+    opacity: 0;
+    transition:all 300ms 0s ease
+}
+
+.TimeLineItem.NgThumb.Novel .IllustThumbDisp:hover .TimeLineIllustDesc {
+    opacity:1
+}
+
+.TimeLineItem.NgThumb.Novel .IllustThumbDisp:hover {
+    background-image:none
+}
+
+.TimeLineInfo {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    font-size:10px
+}
+
+.TimeLineContents {
+    display: block;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px 15px;
+    color:#aaa
+}
+
+.TimeLineContents a {
+    color:#aaa
+}
+
+.TimeLineContents a:hover {
+    color:#19f
+}
+
+.TimeLineContents .RightsInfo {
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    width: 100%;
+    padding: 7px 0;
+    box-sizing: border-box;
+    font-size: 0;
+    text-align: center;
+    margin:0
+}
+
+.TimeLineContents .RightsInfo .RightsInfoTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    padding: 0;
+    margin:5px 0 0
+}
+
+.TimeLineContents .RightsInfo .RightsItem {
+    float: none;
+    text-align: center;
+    width:12.5%
+}
+
+.TimeLineContents .RightsInfo .CertificationItem td {
+    word-break: break-all;
+    word-wrap:break-word
+}
+
+.TimeLineContents .RightsInfo .RightsItem .RightsLabel {
+    text-align: center;
+    font-size: 8px;
+    line-height: 10px;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center
+}
+
+.TimeLineContents .RightsInfo .RightsItem .RightsIcon {
+    display: block;
+    width: 35px;
+    height: 12px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 9px;
+    content: "NG";
+    background-color: #ff5656;
+    color: #fff;
+    line-height: 12px;
+    font-weight: 700;
+    margin:0 auto
+}
+
+.TimeLineContents .RightsInfo .RightsItem .RightsIcon.RightsIconOk {
+    background-color:#4ae
+}
+
+.TimeLineContents .RightsInfo .RightsItem.disabled .RightsIcon {
+    background-color:#eee
+}
+
+.TimeLineContents .RightsInfo .RightsItem.disabled {
+}
+
+.TimeLineContents .RightsInfo .RightsDetail {
+    font-size: 9px;
+    text-align: left;
+    display: block;
+    margin: 5px 0 0;
+    padding:0 0 0 15px
+}
+
+.TimeLineContents .RightsInfo .CertificationDetail {
+    font-size: 10px;
+    text-align: left;
+    display: block;
+    margin:15px 0 0
+}
+
+.TimeLineContents .RightsInfo .CertificationItem {
+    width: 100%;
+    font-size: 11px;
+    text-align: left;
+    margin: 10px 0 0;
+    word-wrap: break-word;
+    word-break:break-all
+}
+
+.CommentListCmd .RightsItem {
+    width:75px
+}
+
+.LoadingInfo {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align:center
+}
+
+.PageBar {
+    display:none
+}
+
+.UpSelector {
+    display: flex;
+    flex-flow: row nowrap;
+    float: left;
+    width: 100%;
+    background: #f6f6f6;
+    box-sizing: border-box;
+    border-radius: 6px 6px 0 0;
+    overflow:hidden
+}
+
+.UpSelector .UpSelectorItem {
+    display: block;
+    flex: 1 1;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: solid 1px #eee;
+    border-left: solid 1px #ddd;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration:none
+}
+
+.UpSelector .UpSelectorItem:first-child {
+    border-left:none
+}
+
+.UpSelector .UpSelectorItem.Selected {
+    background-color: #fff;
+    border-bottom-color:#fff
+}
+
+.UpSelector .UpSelectorItem .IconManga {
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    background: #707065;
+    margin: 0 0 5px;
+    position:relative
+}
+
+.UpSelector .UpSelectorItem .IconManga:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 6px;
+    height: 5px;
+    background:#707065
+}
+
+.UpSelector .UpSelectorItem .IconManga:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    width: 3px;
+    height: 5px;
+    background:#707065
+}
+
+.UpSelector .UpSelectorItem:hover .IconManga {
+    background-color:#19f
+}
+
+.UpSelector .UpSelectorItem:hover .IconManga:before {
+    background-color:#19f
+}
+
+.UpSelector .UpSelectorItem:hover .IconManga:after {
+    background-color:#19f
+}
+
+.UpSelector .UpSelectorItem.Selected .IconManga {
+    background-color:#19f
+}
+
+.UpSelector .UpSelectorItem.Selected .IconManga:before {
+    background-color:#19f
+}
+
+.UpSelector .UpSelectorItem.Selected .IconManga:after {
+    background-color:#19f
+}
+
+.TimeLineItemAdd .NewSeriesName {
+    display: none;
+    float: left;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 27px;
+    margin: 0 0 0 15px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 0 5px;
+    line-height:25px
+}
+
+.TimeLineItemAdd .NewSeriesName:placeholder-shown {
+    color: #c0c0b5;
+    font-style:italic
+}
+
+.EditNovelCommandCtrl {
+}
+
+.EditNovelCommand {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 0;
+    margin:3px 0
+}
+
+.EditNovelCommand .EditNovelCommandItem {
+    display: inline-block;
+    font-size: 11px;
+    margin: 3px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 2px;
+    padding: 1px 3px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight:400
+}
+
+.EditCover {
+    display: flex;
+    float: left;
+    width: 100%;
+    align-items:flex-end
+}
+
+.EditCover .EditCoverImage {
+    display:block
+}
+
+.EditCover .EditCoverImage .CoverFile {
+    display: block;
+    max-width: 300px;
+    max-height: 180px;
+    margin: 0 10px 0 0;
+    border:solid 1px #eee
+}
+
+.EditCover .EditCoverFile {
+    display: block;
+    position:relative
+}
+
+.EditCover .EditCoverFile .CoverFileSelector {
+    width: 100px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1
+}
+
+.EditCover .EditCoverFile .EditCoverFileBtn {
+    cursor: pointer
+}
