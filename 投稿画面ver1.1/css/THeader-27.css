@@ -1,0 +1,732 @@
+@charset "utf-8";
+body {
+    margin-top:69px
+}
+
+#Header {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: #fff;
+    z-index: 99;
+    min-width: 1200px;
+    border-bottom:solid 1px #eee
+}
+
+#Header .HeaderWrapper {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:0 30px
+}
+
+#Header .HeaderTitle {
+    display: block;
+    float: left;
+    width:740px
+}
+
+#Header .TitleTxt {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    height: 14px;
+    line-height: 14px;
+    margin: 9px 0 0;
+    color:#aa9
+}
+
+#Header .Title {
+    display: block;
+    float: left;
+    width: 208px;
+    margin: 0;
+    padding: 0;
+    overflow:hidden
+}
+
+#Header .Title a {
+    display: block;
+    float: left;
+    padding:1px 0
+}
+
+#Header .Title .TitleImg {
+    display: block;
+    width: 208px;
+    height: 19px;
+    border:none
+}
+
+#Header .HeaderMenuRight {
+    display: block;
+    float: right;
+    width:400px
+}
+
+#Header .TagSearch {
+    float: left;
+    width: auto;
+    height: 21px;
+    margin:0 0 0 15px
+}
+
+#Header .TagSearch .TagSearchInput {
+    display: block;
+    float: left;
+    font-size: 11px;
+    width: 200px;
+    height: 19px;
+    border: 1px solid #c0c0b5;
+    padding: 0;
+    margin: 0;
+    color: #b0b0a5;
+    font-style: italic;
+    text-align: center;
+    line-height:18px
+}
+
+#Header .TagSearch .TagSearchBtn {
+    display: block;
+    float: left;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    color: #c0c0b5;
+    cursor: pointer;
+    background-color: #c0c0b5;
+    color:#fff
+}
+
+#Header .TagSearch .TagSearchBtn:hover {
+    background-position:0 -18px
+}
+
+#Header .SafeFiler {
+    display: block;
+    float: right;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    padding: 0;
+    margin: 4px 0 10px;
+    list-style:none
+}
+
+#Header .SafeFiler .SafeFilerItem {
+    display: inline-block;
+    height: 8px;
+    line-height: 8px;
+    text-align: center;
+    font-size: 10px;
+    color: #aa9;
+    padding: 0 10px;
+    border-right: solid 1px #c0c0b5;
+    cursor:pointer
+}
+
+#Header .SafeFiler .SafeFilerItem:last-child {
+    border:none
+}
+
+#Header .SafeFiler .SafeFilerItem.Selected {
+    color:#4ae
+}
+
+#Header .SafeFiler .SafeFilerItem:hover {
+    color:#49d
+}
+
+#Header .LoginInfo {
+    display: block;
+    height: 40px;
+    float: right;
+    border: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style:none
+}
+
+#Header .LoginInfo ul {
+    display: block;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding:0
+}
+
+#Header .LoginInfo li {
+    display: block;
+    float: left;
+    margin: 0;
+    cursor:pointer
+}
+
+#Header .LoginInfo .LoginInfoItem {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 40px;
+    margin: 0;
+    text-decoration: none;
+    text-align:center
+}
+
+#Header .LoginInfo .LoginInfoItem .LoginInfoItemIcon {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    vertical-align: bottom;
+    margin: 0 21px;
+    overflow: hidden;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat:no-repeat
+}
+
+#Header .LoginInfo .LoginInfoItem .LoginInfoItemTxt {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    font-size: 9px;
+    text-align: center;
+    color: #b0b0a5;
+    margin:2px 0 0
+}
+
+#Header .LoginInfo .LoginInfoItem.Selected .LoginInfoItemTxt {
+    color:#4ae
+}
+
+#Header .LoginInfo .LoginInfoItem:hover .LoginInfoItemTxt {
+    color:#19f
+}
+
+#Header .LoginInfo .LoginInfoItem.SignUpTwitter {
+    width: auto;
+    background: #1da1f2;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 10px;
+    height: 30px;
+    line-height:30px
+}
+
+#Header .LoginInfo .LoginInfoItem.SignUp {
+    height: 30px;
+    width: 90px;
+    margin: 0 0 0 10px;
+    background:transparent url(https://galleria-img.emotionflow.com/img/LoginInfoMenuLogout8.png) no-repeat 0 0
+}
+
+#Header .LoginInfo .LoginInfoItem.SignUp:hover {
+    background-position:0 -30px
+}
+
+#Header .LoginInfo .LoginInfoItem.Login {
+    height: 30px;
+    width: 90px;
+    margin: 0 0 0 10px;
+    background:transparent url(https://galleria-img.emotionflow.com/img/LoginInfoMenuLogout8.png) no-repeat -90px 0
+}
+
+#Header .LoginInfo .LoginInfoItem.Login:hover {
+    background-position:-90px -30px
+}
+
+#Header .LoginInfo .LoginInfoItem.Information {
+    background: transparent url(/s/img/MenuInfo.png) no-repeat 50% 50%;
+    position: relative;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    background-size:contain
+}
+
+#Header .LoginInfo .LoginInfoItem.Information.Selected {
+    background-image:url(/s/img/MenuInfoB2.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoNum {
+    display: block;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #c0c0b5;
+    font-size:12px
+}
+
+#Header .LoginInfo .LoginInfoItem.Information.Selected .InfoNum {
+    color:#4ae
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #f6f6f0;
+    z-index: 99;
+    border-left: solid 1px #fff;
+    border-right:solid 1px #ddd
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem {
+    display: block;
+    min-height: 20px;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+    background-color: #f6f6f0;
+    border-top: solid 1px #fbfbf0;
+    border-bottom: solid 1px #c0c0b5;
+    font-weight: 400;
+    color:505050
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem.Selected {
+    color: #4ae;
+    font-weight:700
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem:hover {
+    background-color: #a0a095;
+    border-top: solid 1px #d0d0c5;
+    border-bottom: solid 1px #909085;
+    color:#fff
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem .InfoBodyItemBody {
+    display: block;
+    font-size:12px
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem .InfoBodyItemDate {
+    display: block;
+    font-size: 9px;
+    text-align:left
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem.UpdateAll {
+    background-color: #909085;
+    color: #f0f0e5;
+    border: none;
+    text-align:center
+}
+
+#Header .LoginInfo .LoginInfoItem.Information .InfoBodyFrame .InfoBodyItem.UpdateAll:hover {
+    color:#19f
+}
+
+#Header .LoginInfo .LoginInfoItem .LoginInfoItemIcon {
+}
+
+#Header .LoginInfo .LoginInfoItem.Timeline .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuHome.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Timeline:hover .LoginInfoItemIcon, #Header .LoginInfo .LoginInfoItem.Timeline.Selected .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuHomeB2.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Bookmark .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuStar.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Bookmark:hover .LoginInfoItemIcon, #Header .LoginInfo .LoginInfoItem.Bookmark.Selected .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuStarB2.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Access .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuAccess.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Access:hover .LoginInfoItemIcon, #Header .LoginInfo .LoginInfoItem.Access.Selected .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuAccessB2.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuSetting.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting:hover .LoginInfoItemIcon, #Header .LoginInfo .LoginInfoItem.Setting.Selected .LoginInfoItemIcon {
+    background-image:url(/s/img/MenuSettingB2.png)
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting {
+    position: relative;
+    z-index:20
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting {
+    cursor: pointer;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    display: none;
+    background-color: #606055;
+    z-index: 30;
+    border-left: solid 1px #fff;
+    border-right:solid 1px #ddd
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting .LoginInfoSettingItem {
+    display: block;
+    height: 20px;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+    background-color: #f6f6f0;
+    border-top: solid 1px #fbfbf0;
+    border-bottom: solid 1px #c0c0b5;
+    color:505050
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting .LoginInfoSettingItem:hover {
+    background-color: #a0a095;
+    border-top: solid 1px #d0d0c5;
+    border-bottom: solid 1px #909085;
+    color:#fff
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting .LoginInfoSettingUser {
+    display: block;
+    background-color: #909085;
+    padding: 4px 10px;
+    white-space: nowrap;
+    font-size: 10px;
+    color: #f0f0e5;
+    text-align:left
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting .LoginInfoSettingUser a {
+    color:#f0f0e5
+}
+
+#Header .LoginInfo .LoginInfoItem.Setting .LoginInfoSetting .LoginInfoSettingUser:hover {
+    color:#19f
+}
+
+#Header .CatMenu {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 9px 0 3px;
+    height:12px
+}
+
+#Header .CatMenu ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:0
+}
+
+#Header .CatMenu .CatMenuItem {
+    display: block;
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    border-right: solid 1px #c0c0b5;
+    font-size: 10px;
+    position:relative
+}
+
+#Header .CatMenu .CatMenuItem .CatMenuItemLink {
+    display: block;
+    float: left;
+    padding: 0 15px;
+    min-width: 50px;
+    text-decoration: none;
+    color:#aa9
+}
+
+#Header .CatMenu .CatMenuItem.Selected .CatMenuItemLink {
+    color:#4ae
+}
+
+#Header .CatMenu .CatMenuItem:hover .CatMenuItemLink {
+    color:#49d
+}
+
+#Header .CatMenu .CatMenuItem:last-child {
+    border:none
+}
+
+#Header .CatMenu .CatMenuItem:first-child .CatMenuItemLink {
+    padding-left:0
+}
+
+.MesWin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index:999
+}
+
+.MesWin .MesWinFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 140px;
+    padding: 20px;
+    background: #fff;
+    border: solid 1px #aaa;
+    text-align:right
+}
+
+.MesWin .MesTxt {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    text-align:left
+}
+
+.MesWin .MesNum {
+    margin:5px 0 10px
+}
+
+.MesWin .MesBtnSkip, .MesWin .MesBtnOk {
+    margin:0 0 0 10px
+}
+
+.AboutFrame {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    background-color: rgba(255, 255, 255, .95);
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    border-top:solid 1px #eee
+}
+
+.AboutFrame .AboutClose {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    text-decoration:none
+}
+
+.AboutFrame .AboutWrapper {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    text-align:center
+}
+
+.AboutFrame .AboutWrapper .AboutBox {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin:10px 0
+}
+
+.AboutFrame .AboutWrapper .AboutBox .MainTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight:700
+}
+
+.AboutFrame .AboutWrapper .AboutBox .SubTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight:400
+}
+
+.AboutFrame .AboutWrapper .AboutList {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 10px;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center
+}
+
+.AboutFrame .AboutWrapper .AboutList .AboutListItem {
+    display: block;
+    flex: 0 0 19%;
+    text-align: center;
+    background: #707065;
+    color: #fff;
+    margin: 5px;
+    padding: 2px 0;
+    box-sizing:border-box
+}
+
+.AboutFrame .AboutWrapper .AboutList .AboutListItem .ItemDetail {
+    font-size:13px
+}
+
+.AboutFrame .AboutWrapper .AboutBox .LoginBtnFrame {
+    display: inline-block;
+    margin:0 10px
+}
+
+.AboutFrame .AboutWrapper .AboutBox .LoginBtnFrame .LoginBtn {
+    display: block;
+    width: 90px;
+    height: 30px;
+    font-size: 0;
+    background:transparent url(https://galleria-img.emotionflow.com/img/LoginInfoMenuLogout8.png) no-repeat 0 0
+}
+
+.AboutFrame .AboutWrapper .AboutBox .LoginBtnFrame .LoginBtn:hover {
+    background-position:0 -30px
+}
+
+.AboutFrame .AboutWrapper .AboutBox .LoginBtnFrame .LoginBtn.Login {
+    background-position:-90px 0
+}
+
+.AboutFrame .AboutWrapper .AboutBox .LoginBtnFrame .LoginBtn.Login:hover {
+    background-position:-90px -30px
+}
+
+.AboutFrame .AboutWrapper .AboutBox .SignUpTwitter {
+    font-size: 17px;
+    margin-top:20px
+}
+
+.AboutFooter {
+    width: 100%;
+    margin:30px 0 0
+}
+
+.AboutFooter .AboutFrame {
+    position: relative;
+    display: block;
+    z-index:0
+}
+
+.AboutFooter .AboutFrame .AboutClose {
+    display:none
+}
+
+.MuteMenu {
+    display: block;
+    margin: 0;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    padding: 0;
+    z-index:98
+}
+
+.MuteMenu .MuteMenuTab {
+    float: left;
+    width: 128px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    background-color: #4ae;
+    color: #fff;
+    font-size: 11px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    position: relative;
+    top: 130px;
+    border: solid 1px #19f;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    cursor:pointer
+}
+
+.MuteMenu .MuteMenuEdit {
+    display: block;
+    float: left;
+    width: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius:0 0 0 6px
+}
+
+.MuteMenu .MuteMenuEdit.Show {
+    width: 300px;
+    border: solid 1px #ccc;
+    border-right:none
+}
+
+.MuteMenu .MuteMenuEdit .MuteMenuEditTxtFrame {
+    width: 100%;
+    padding: 10px 10px 0;
+    box-sizing:border-box
+}
+
+.MuteMenu .MuteMenuEdit .MuteMenuEditTxt {
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    height:200px
+}
+
+.MuteMenu .MuteMenuEdit .MuteMenuEditTxtUsage {
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 10px 3px;
+    font-size: 9px;
+    text-align:right
+}
+
+.MuteMenu .MuteMenuEdit .MuteMenuEditBtn {
+    width: 100%;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    text-align: right
+}

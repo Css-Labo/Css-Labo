@@ -1,0 +1,435 @@
+@charset "utf-8";
+.BtnBase.Selected, .BtnBase.Selected:hover {
+    background-color: #4ae;
+    border-color: #4ae;
+    color:#fff
+}
+
+.BtnBase {
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 15px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #4ae;
+    border-radius: 40px;
+    font-weight: 700;
+    background-color: #fff;
+    color: #4ae;
+    position:relative
+}
+
+.IllustTimeLineNovel a {
+    color:#4ae
+}
+
+.IllustTimeLineNovel a:hover {
+    color:#7ae
+}
+
+.IllustTimeLineNovel {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #505043;
+    position: relative;
+    flex-wrap: wrap;
+    font-size: 17px;
+    font-family:yumincho, 游明朝, 游明朝体, yu mincho, ヒラギノ明朝 pron, hiragino mincho pron, hiraminpron-w3, hiraminpron-w6, ヒラギノ明朝 pro, hiragino mincho pro, hiraminpro-w3, hiraminpro-w6, hg明朝e, hgp明朝e, hgs明朝e, hgminchoe, hgpminchoe, hgsminchoe, hg明朝b, hgp明朝b, hgs明朝b, hgminchob, hgpminchob, hgsminchob, 平成明朝, 平成明朝 std, 平成明朝 pro, heisei mincho, heisei mincho std, heisei mincho pro, ipa明朝, ipamincho, Georgia, georgia ref, times new roman, SerifJP, serif
+}
+
+.IllustTimeLineNovel .NovelPreviewFrame {
+    display: block;
+    width: 800px;
+    margin:0
+}
+
+.IllustTimeLineNovel .NovelPreviewBody {
+    display: block;
+    width: 100%;
+    margin:80px 0 50px
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index:1
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu.Top {
+    top:10px
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu.Bottom {
+    bottom:10px
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position:relative
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlItem {
+    display: block;
+    padding:0 10px
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn {
+    cursor:pointer
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn.Prev:before {
+    content: "\f106"
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn.Next:before {
+    content: "\f107"
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn.Disable {
+    color:#ccc
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .PageCtrl .PageCtrlBookmarker {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    font-size: .7em;
+    padding:1px 15px
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .FeelSetting {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size:0
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .FeelSetting .SettingItem {
+    display: inline-block;
+    font-weight: 400;
+    padding: 1px 10px;
+    margin: 0 2px;
+    font-size: 11px;
+    border-radius: 0;
+    border-color: #eee;
+    color: #aaa;
+    cursor: pointer;
+    font-family: Verdana, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, メイリオ, Meiryo, century gothic, Osaka, ＭＳ Ｐゴシック, ms pgothic, sans-serif;
+    background:0 0
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .FeelSetting .SettingItem.Selected, .IllustTimeLineNovel .NovelPreviewMenu .FeelSetting .SettingItem:hover {
+    background:#eee
+}
+
+.IllustTimeLineNovel .NovelPreviewMenu .FeelSetting .SettingItemSpace {
+    display: inline-block;
+    width:20px
+}
+
+.IllustTimeLineNovel .NovelCover {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin:0 0 20px
+}
+
+.IllustTimeLineNovel .NovelCover .NovelCoverImage {
+    max-width:100%
+}
+
+.IllustTimeLineNovel .NovelTitle {
+    display: block;
+    font-size: 1.5em;
+    margin: 30px 0 17px;
+    font-weight:700
+}
+
+.IllustTimeLineNovel .NovelNameMenu {
+    display: block;
+    margin:40px 0 50px 30px
+}
+
+.IllustTimeLineNovel .NovelNameMenu:before {
+    content: 'Name Setting';
+    display: block;
+    margin: 0 0 15px;
+    font-size: 1.1em;
+    font-weight:700
+}
+
+.IllustTimeLineNovel .NovelNameMenu .NovelNameMenuItem {
+    display: flex;
+    margin: 10px auto 10px 20px;
+    flex-flow: row nowrap;
+    align-items:center
+}
+
+.IllustTimeLineNovel .NovelNameMenu .NovelNameMenuItem .ItemName {
+    display: inline-block;
+    text-decoration: none;
+    width: 180px;
+    height: auto;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size:.9em
+}
+
+.IllustTimeLineNovel .NovelNameMenu .NovelNameMenuItem .ItemBtn {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    font-size:1.5em
+}
+
+.IllustTimeLineNovel .NovelMenu {
+    display: block;
+    margin:40px 0 50px 30px
+}
+
+.IllustTimeLineNovel .NovelMenu:before {
+    content: 'Index';
+    display: block;
+    margin: 0 0 15px;
+    font-size: 1.1em;
+    font-weight:700
+}
+
+.IllustTimeLineNovel .NovelMenu .NovelMenuItem {
+    display: block;
+    margin: 5px 0 5px 20px;
+    cursor: pointer;
+    text-decoration:none
+}
+
+.IllustTimeLineNovel .NovelMenu .NovelMenuItem:hover {
+    font-weight:700
+}
+
+.IllustTimeLineNovel .NovelMenu .NovelMenuItem:before {
+    content: ' ─ ';
+    display: inline-block;
+    width:30px
+}
+
+.IllustTimeLineNovel .NovelSection {
+    display: none;
+    line-height: 1.8;
+    word-wrap: break-word;
+    text-align: justify;
+    width:100%
+}
+
+.IllustTimeLineNovel .NovelSection .NovelSectionTitle {
+    display: block;
+    font-size: 1.1em;
+    margin: 40px 0 10px;
+    font-weight:700
+}
+
+.IllustTimeLineNovel .TextEmphasis {
+    -webkit-text-emphasis: dot;
+    text-emphasis:dot
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin:5px 0
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkFile {
+    display: inline-block;
+    max-width: 100%;
+    max-height: none;
+    flex:1 1
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkTitleFrame {
+    display: inline-block;
+    width: 100%;
+    font-size: .9em;
+    writing-mode: horizontal-tb;
+    height: 30px;
+    line-height: 30px;
+    font-family:ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, hiragino kaku gothic pron, ヒラギノ角ゴ pron, ヒラギノ角ゴ pro, hiragino kaku gothic pro, meiryo, メイリオ, 游ゴシック体, yugothic, 游ゴシック, yu gothic, ipaゴシック, ipagothic, arial, helvetica, sans-serif
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkTitleFrame a {
+    text-decoration:none
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkTitleFrame .ArtWorkTitle {
+    display:inline-block
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkTitleFrame .ArtWorkUser {
+    display:inline-block
+}
+
+.IllustTimeLineNovel .NovelSection .NovelArtWork .ArtWorkTitleFrame .ArtWorkUser:before {
+    content: '/';
+    display: inline-block;
+    margin:0 15px
+}
+
+.IllustTimeLineNovel.Black {
+    background-color: #1f2119;
+    color:#ddd
+}
+
+.IllustTimeLineNovel.Kinari {
+    background-color: #ffe;
+    color:#554
+}
+
+.IllustTimeLineNovel.Small {
+    font-size:15px
+}
+
+.IllustTimeLineNovel.Large {
+    font-size:20px
+}
+
+.IllustTimeLineNovel.Gothic {
+    font-family:ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, hiragino kaku gothic pron, ヒラギノ角ゴ pron, ヒラギノ角ゴ pro, hiragino kaku gothic pro, meiryo, メイリオ, 游ゴシック体, yugothic, 游ゴシック, yu gothic, ipaゴシック, ipagothic, arial, helvetica, sans-serif
+}
+
+.IllustTimeLineNovel.Vertical {
+    height: 100%;
+    align-items:center
+}
+
+.IllustTimeLineNovel.Vertical a {
+    text-decoration:overline
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewBody {
+    margin:0
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewMenu .PageCtrl {
+    flex-direction:row-reverse
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn.Prev:before {
+    content: "\f105"
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewMenu .PageCtrl .PageCtrlItem .PageCtrlBtn.Next:before {
+    content: "\f104"
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewMenu.Bottom .PageCtrl .PageCtrlBookmarker {
+    display:none
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewFrame {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    width: 95%;
+    margin: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    text-align:right
+}
+
+.IllustTimeLineNovel.Vertical .NovelPreviewFrame .NovelPreviewBody {
+    height: 100%;
+    max-height: 770px;
+    box-sizing: border-box;
+    padding: 75px 0 45px;
+    width: auto;
+    display:inline-block
+}
+
+.IllustTimeLineNovel.Vertical .NovelSection {
+    line-height:2
+}
+
+.IllustTimeLineNovel.Vertical .NovelCover {
+    width: auto;
+    margin:0 0 0 20px
+}
+
+.IllustTimeLineNovel.Vertical .NovelCover .NovelCoverImage {
+    max-height:100%
+}
+
+.IllustTimeLineNovel.Vertical .NovelTitle {
+    margin:0 17px 0 3px
+}
+
+.IllustTimeLineNovel.Vertical .NovelNameMenu {
+    margin:30px 40px 0 50px
+}
+
+.IllustTimeLineNovel.Vertical .NovelNameMenu .NovelNameMenuItem {
+    margin:20px 10px 0
+}
+
+.IllustTimeLineNovel.Vertical .NovelNameMenu .NovelNameMenuItem:before {
+    width: auto;
+    height:30px
+}
+
+.IllustTimeLineNovel.Vertical .NovelNameMenu .NovelNameMenuItem .ItemName {
+    padding: 5px 0;
+    width: auto;
+    height:180px
+}
+
+.IllustTimeLineNovel.Vertical .NovelNameMenu .NovelNameMenuItem .ItemBtn {
+    margin:10px 0 0
+}
+
+.IllustTimeLineNovel.Vertical .NovelMenu {
+    margin:30px 40px 0 50px
+}
+
+.IllustTimeLineNovel.Vertical .NovelMenu .NovelMenuItem {
+    margin:20px 5px 0
+}
+
+.IllustTimeLineNovel.Vertical .NovelMenu .NovelMenuItem:before {
+    width: auto;
+    height:30px
+}
+
+.IllustTimeLineNovel.Vertical .NovelSection .NovelSectionTitle {
+    margin:0 17px 0 3px
+}
+
+.IllustTimeLineNovel.Vertical .NovelSection .NovelArtWork {
+    width: auto;
+    height: 100%;
+    flex-flow: row nowrap;
+    margin:0 5px
+}
+
+.IllustTimeLineNovel.Vertical .NovelSection .NovelArtWork .ArtWorkFile {
+    max-width: none;
+    max-height: calc(100% - 30px);
+    flex:1 0
+}
+
+.IllustTimeLineNovel.Vertical .NovelSection .NovelArtWork .ArtWorkTitleFrame {
+    width: auto
+}
