@@ -8,12 +8,13 @@ INSERT INTO user_tbl (user_name,user_pass,user_mail) VALUE
 ('宮川','miyagawa3333','miyagawa@gmail.com');
 
 
-//CSSテーブル(INT,VARCHAR,MEDIUMBLOB,VARCHAR,VARCHAR)
-INSERT INTO css_tbl (creater_id,css_name,css_img,css_code,css_tag) VALUE
-(1,'sample_name1','sample_img1','sample_code1','sample_tag1'),
-(2,'sample_name2','sample_img2','sample_code2','sample_tag2'),
-(3,'sample_name3','sample_img3','sample_code3','sample_tag3'),
-(4,'sample_name4','sample_img4','sample_code4','sample_tag4');
+//CSSテーブル(INT,VARCHAR,MEDIUMBLOB,VARCHAR,VARCHAR,VARCHAR,VARCHAR)
+
+INSERT INTO css_tbl (creater_id,css_name,css_img,css_Hcode,css_Ccode,css_tag,css_info) VALUE
+(1,'sample_name1','sample_img1','sample_Hcode1','sample_Ccode1','sample_tag1','setumei1'),
+(2,'sample_name2','sample_img2','sample_code2','sample_Ccode2','sample_tag2','setumei1'),
+(3,'sample_name3','sample_img3','sample_code3','sample_Ccode3','sample_tag3','setumei1'),
+(4,'sample_name4','sample_img4','sample_code4','sample_Ccode4','sample_tag4','setumei1');
 
 
 
