@@ -18,9 +18,9 @@ class Login
         $ps->bindValue(1, $id, PDO::PARAM_STR);
         $ps->execute();
         $search = $ps->fetchAll();
-        if ($search == null)
-            echo 'アカウントが存在しません';
-        else {
+        if ($search == null){
+            //アカウントが存在していない
+        }else {
             foreach ($search as $row) {
                 if (password_verify($pass, $row['user_pass']) == true) {
                     //ログイン成功→画面遷移を挿入する予定
