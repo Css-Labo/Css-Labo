@@ -10,6 +10,3 @@ ul{
 body[data-member-login="true"]#logout{
     display: block;
 }
-.dropdown{
-    margin-top: 0%;
-}
