@@ -1,3 +1,12 @@
 body{
     background-color: #f1f1f1;
 }
+ul{
+    font-size: 25px;
+}
+#logout{
+    display: none;
+}
+body[data-member-login="true"]#logout{
+    display: block;
+}
