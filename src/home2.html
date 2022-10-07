@@ -24,12 +24,12 @@
               <p class="text-muted">CssLaboの説明?</p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-muted">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-muted"><i class="bi bi-hand-thumbs-up"></i></a></li>
-                <li><a href="Post.html" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
-                <li><a href="#" class="text-muted"><i class="bi bi-person-plus"></i></a></li>
-                <li><a href="#" class="text-muted"><i class="bi bi-person-x"></i></a></li>
+                <!-- <li><a href="#" class="text-muted"><i class="bi bi-hand-thumbs-up"></i></a></li> -->
+                <li><a href="/profile/" class="text-muted"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="/toukou/index.html" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
+                <!-- <li><a href="SignIn.html" class="text-muted"><i class="bi bi-person-plus"></i></a></li> -->
+                <li><a href="#" class="text-muted"><i class="bi bi-person-x" id="logout"></i></a></li>
               </ul>
             </div>
           </div>
@@ -74,14 +74,20 @@
                     <div class="col-5">
                       <h6>作品名</h6>
                     </div>
-                    <div class="col-5">
+                    <div class="col-4">
                       <h6>名前</h6>
                     </div>
                     <div class="col-1">
                       <i class="bi bi-hand-thumbs-up"></i>
                     </div>
-                    <div class="col-1">
-                      <i class="bi bi-three-dots"></i>
+                    <div class="col-2">
+                      <div class="dropdown">
+                        <button class="btn btn-while dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li><button class="dropdown-item" type="button"><i class="bi bi-send"></i></button></li>
+                          <li><button class="dropdown-item" type="button"><i class="bi bi-bookmark-star"></i></button></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -93,10 +99,10 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-5">
-                      <h6>作品名</h6>
+                      <h6 id="sakuhin">作品名</h6>
                     </div>
                     <div class="col-5">
-                      <h6>名前</h6>
+                      <h6 id="name">名前</h6>
                     </div>
                     <div class="col-1">
                       <i class="bi bi-hand-thumbs-up"></i>
