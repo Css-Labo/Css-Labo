@@ -20,17 +20,20 @@ class Sginin
         $search = $ps->fetchAll();
         if ($search == null) {
             //アカウントが存在していない
-            header("../login.html");
+            header("Location:../SignIn.html");
+            exit;
         } else {
             foreach ($search as $row) {
-                if (password_verify($pass, $row['user_pass']) == true) {
+                if ($pass == $row['user_pass']) {
                     //ログイン成功→画面遷移を挿入する予定
                     $_SESSION['name'] = $row['user_name'];
                     $_SESSION['id'] = $row['user_id'];
-                    header("../home2.html");
+                    header("Location:../home2.html");
+                    exit;
                 } else {
                     //ログイン失敗→パスワードが間違っている
-                    header("../login.html");
+                    header("Location:../SignIn.html");
+                    exit;
                 }
             }
         }
@@ -54,7 +57,7 @@ class Login
         $ps->bindValue(2, password_hash($pass, PASSWORD_DEFAULT), PDO::PARAM_STR);
         $ps->bindValue(3, $mail, PDO::PARAM_STR);
         $ps->execute();
-        header("../login.html");
+        header("Location:../SignIn.html");
+        exit;
     }
 }
-?>
