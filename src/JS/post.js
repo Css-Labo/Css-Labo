@@ -31,3 +31,5 @@ function GethashID (hashIDName){
     var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
     GethashID (hashName);//設定したタブの読み込み
   });
+
+  // location.href = "#tab1";
