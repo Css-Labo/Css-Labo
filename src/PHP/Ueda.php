@@ -15,6 +15,13 @@
             $this->tagsw="";//タグの絞り込みを無しにする
             return $ps;
         }
+        public function GetUsername($id){
+            $pdo = $this->dbConnect();
+            $sql = "SELECT user_name FROM user_tbl WHERE user_id = $id";
+            $ps = $pdo->prepare($sql);
+            $ps->execute();
+            return $ps;
+        }
         //ホーム画面のいいね
         public function UpdateGood($id){
             $pdo = $this->dbConnect();
@@ -78,6 +85,16 @@
             }
             $ps->execute();
             return $ps;
+        }
+
+        //ホーム画面のお気に入り
+        public function InsertStar($cssid,$userid){
+            $pdo = $this->dbConnect();
+            $sql = "INSERT INTO bookmark_tbl (user_id,css_id) VALUES(?,?)";
+            $ps = $pdo->prepare($sql);
+            $ps->bindValue(1,$userid,PDO::PARAM_INT);
+            $ps->bindValue(2,$cssid,PDO::PARAM_STR);
+            $ps->execute();
         }
 
         //投稿画面の投稿
