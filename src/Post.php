@@ -18,7 +18,26 @@
 </head>
 
 <body>
+    <?php
+    require_once '../src/PHP/Ueda.php';
+    session_start();
+    $_SESSION['id']='1';
+    $dbmng = new Ueda();
+    if (isset($_POST["mode"]) && $_POST["mode"] == "encode" && $_FILES['image']['name']) {
+        $uploadFile = "./" . basename($_FILES['image']['name']);
 
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile)) {
+            $image = file_get_contents($uploadFile);
+            unlink($uploadFile);
+        } else {
+            echo "upload error.";
+        }
+        $base64Text = "data:image/png;base64,".base64_encode($image);
+        $dbmng->InsertCss($_SESSION['id'],$_POST['name'],$base64Text,$_POST['Hcode'],$_POST['Ccode'],$_POST['tag'],$_POST['info']);
+        $alert = "<script type='text/javascript'>alert('投稿しました！タイトル名：".$_POST["name"]."');</script>";
+        echo $alert;
+    }
+    ?>
     <header>
         <div class="collapse bg-while" id="navbarHeader">
             <div class="container">
@@ -52,12 +71,12 @@
         </div>
     </header>
 
-    <form action="#">
+    <form action="" method="post" enctype="multipart/form-data">
 
         <div>
             <label class="desc" id="title1" for="Field1">Title</label>
             <div>
-                <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+                <input id="Field1" name="name" type="text" class="field text fn" value="" size="8" tabindex="1">
             </div>
         </div>
 
@@ -66,7 +85,7 @@
                 Comments
             </label>
             <div>
-                <input id="Field3" name="Field3" type="email" spellcheck="false" value="" tabindex="3">
+                <input id="Field3" name="info" type="text" spellcheck="false" value="" tabindex="3">
             </div>
         </div>
 
@@ -76,7 +95,7 @@
             </label>
 
             <div>
-                <textarea id="Field4" name="Field4" spellcheck="true" rows="5" cols="50" tabindex="4"></textarea>
+            <textarea  name="Hcode" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
             </div>
 
         </div>
@@ -87,7 +106,8 @@
             </label>
 
             <div>
-                <textarea id="Field4" name="Field4" spellcheck="true" rows="5" cols="50" tabindex="4"></textarea>
+            <textarea  name="Ccode" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+        </div>
             </div>
 
         </div>
@@ -104,7 +124,8 @@
             <div>
                 <!-- <input id="radioDefault_5" name="Field5" type="hidden" value=""> -->
                 <div>
-                    <input id="Field5_0" name="Field5" type="file" tabindex="5">
+                    <input type="hidden" name="mode" value="encode" />
+                    <input type="file" name="image" class="form-control" id="Field6" value="First Choice" tabindex="8"/>
                 </div>
             </div>
 
@@ -137,18 +158,18 @@
                 #Tag
             </label>
             <div>
-                <select id="Field106" name="Field106" class="field select medium" tabindex="11">
-                    <option value="First Choice">#Spring</option>
-                    <option value="Second Choice">#Summer</option>
-                    <option value="Third Choice">#オータム</option>
-                    <option value="Third Choice">#Winter</option>
-                </select>
+            <select id="Field106" name="tag" class="field select medium" tabindex="11">
+                <option value="春">#春</option>
+                <option value="夏">#夏</option>
+                <option value="秋">#秋</option>
+                <option value="冬">#冬</option>
+            </select>
             </div>
         </div>
 
         <div>
             <div>
-                <input id="saveForm" name="saveForm" type="submit" value="Submit">
+            <input id="saveForm" name="saveForm" type="submit" value="投稿">
             </div>
         </div>
 
