@@ -100,16 +100,16 @@
                         $dbmng = new Profile();
                         $sq = $dbmng->Getsubtimeline2($_SESSION['id']);
                         if ($sq == null) {
-                            echofunk1($sq);
+                            echo 'まだ投稿してません';
                         } else {
-                            echo 'お気に入りはありません';
+                            echofunk1($sq);
                         }
                         function echofunk1($sq)
                         {
                             $dbmng = new Profile();
-                            $row3 = $dbmng->GetUsername($_SESSION['user_id']);
+                            $row3 = $dbmng->GetUsername($_SESSION['id']);
                             foreach ($sq as $row2) {
-                                echo '<div class="col-md-6">
+                                echo '<div class="grid-img">
                                         <div class="card mb-5 shadow">
                                             <img class="card-img-top"
                                                 data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
@@ -155,41 +155,6 @@
                             }
                         }
                         ?>
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
                     </div>
                 </div>
                 <div id="tb_4" class="tabs_content--item tb_4">
@@ -210,7 +175,7 @@
                                 $sq2 = $dbmng->Getsubtimeline($row['css_id']);
                                 $row3 = $dbmng->GetUsername($row['user_id']);
                                 foreach ($sq2->fetchAll() as $row2) {
-                                    echo '<div class="col-md-6">
+                                    echo '<div class="grid-img">
                                         <div class="card mb-5 shadow">
                                             <img class="card-img-top"
                                                 data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
@@ -284,5 +249,4 @@
     </svg>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-
 </html>

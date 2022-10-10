@@ -1,12 +1,10 @@
 <?php
-
-class Sginin
-{
+    class Sginin{
 
     function get_pdo()
     {
-        $pdo = new PDO('mysql:host=localhost;dbname=css_labo;charset=utf8', 'webuser', 'abccsd2');
-        return $pdo;
+        $pdo=new PDO('mysql:host=localhost;dbname=csslabo;charset=utf8','ueda','!3qWaHSRi9Bse5m[');
+            return $pdo;
     }
 
     function get_user($mail, $pass)
@@ -24,11 +22,11 @@ class Sginin
             exit;
         } else {
             foreach ($search as $row) {
-                if ($pass == $row['user_pass']) {
+                if  (password_verify($pass, $row['user_pass']) == true) {
                     //ログイン成功→画面遷移を挿入する予定
                     $_SESSION['name'] = $row['user_name'];
                     $_SESSION['id'] = $row['user_id'];
-                    header("Location:../home2.html");
+                    header("Location:../home2.php");
                     exit;
                 } else {
                     //ログイン失敗→パスワードが間違っている
@@ -44,8 +42,8 @@ class Login
 
     function get_pdo()
     {
-        $pdo = new PDO('mysql:host=localhost;dbname=css_labo;charset=utf8', 'webuser', 'abccsd2');
-        return $pdo;
+        $pdo=new PDO('mysql:host=localhost;dbname=csslabo;charset=utf8','ueda','!3qWaHSRi9Bse5m[');
+            return $pdo;
     }
 
     function insert_signin($name, $pass, $mail)
@@ -67,7 +65,7 @@ class Profile
 
     function get_pdo()
     {
-        $pdo = new PDO('mysql:host=localhost;dbname=css_labo;charset=utf8', 'webuser', 'abccsd2');
+        $pdo=new PDO('mysql:host=localhost;dbname=csslabo;charset=utf8','ueda','!3qWaHSRi9Bse5m[');
         return $pdo;
     }
 
@@ -85,7 +83,7 @@ class Profile
         $pdo = $this->get_pdo();
         $sql2 = "SELECT * FROM css_tbl WHERE css_id = ?";
         $ps2 = $pdo->prepare($sql2);
-        $ps2->bindValue(1, $css_name['css_id'], PDO::PARAM_STR);
+        $ps2->bindValue(1, $css_name, PDO::PARAM_STR);
         $ps2->execute();
         return $ps2;
     }
@@ -110,3 +108,4 @@ class Profile
         return $ps2;
     }
 }
+?>
