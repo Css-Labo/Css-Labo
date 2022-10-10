@@ -9,7 +9,7 @@
         //ホーム画面のタイムライン
         public function GetTimeline(){
             $pdo = $this->dbConnect();
-            $sql = "SELECT * FROM css_tbl ORDER BY css_id DESC";
+            $sql = "SELECT * FROM css_tbl ORDER BY css_like DESC";
             $ps = $pdo->prepare($sql);
             $ps->execute();
             $this->tagsw="";//タグの絞り込みを無しにする
@@ -44,7 +44,7 @@
         //ホーム画面の絞り込み
         public function GetTag($tag){
             $pdo = $this->dbConnect();
-            $sql = "SELECT * FROM css_tbl WHERE css_tag = ?";
+            $sql = "SELECT * FROM css_tbl WHERE css_tag = ? ORDER BY css_like DESC";
             $ps = $pdo->prepare($sql);
             $ps->bindValue(1,$tag,PDO::PARAM_STR);
             $ps->execute();
@@ -81,15 +81,17 @@
         }
 
         //投稿画面の投稿
-        public function InsertCss($id,$name,$img,$code,$tag){
+        public function InsertCss($id,$name,$img,$Hcode,$Ccode,$tag,$info){
             $pdo = $this->dbConnect();
-            $sql = "INSERT INTO csslabo (creater_id,css_name,css_img,css_code,css_tag,css_like) VALUES(?,?,?,?,?,0)";
+            $sql = "INSERT INTO css_tbl (creater_id,css_name,css_img,css_Hcode,css_Ccode,css_tag,css_info,css_like) VALUES(?,?,?,?,?,?,?,0)";
             $ps = $pdo->prepare($sql);
             $ps->bindValue(1,$id,PDO::PARAM_INT);
             $ps->bindValue(2,$name,PDO::PARAM_STR);
             $ps->bindValue(3,$img,PDO::PARAM_STR);
-            $ps->bindValue(4,$code,PDO::PARAM_STR);
-            $ps->bindValue(5,$tag,PDO::PARAM_STR);
+            $ps->bindValue(4,$Hcode,PDO::PARAM_STR);
+            $ps->bindValue(5,$Ccode,PDO::PARAM_STR);
+            $ps->bindValue(6,$tag,PDO::PARAM_STR);
+            $ps->bindValue(7,$info,PDO::PARAM_STR);
             $ps->execute();
         }
     }

@@ -10,3 +10,7 @@ ul{
 body[data-member-login="true"]#logout{
     display: block;
 }
+.float-right{
+    font-size: 60px;
+    text-align: right;
+}
