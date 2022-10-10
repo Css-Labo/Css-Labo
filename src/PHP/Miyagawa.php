@@ -61,3 +61,52 @@ class Login
         exit;
     }
 }
+
+class Profile
+{
+
+    function get_pdo()
+    {
+        $pdo = new PDO('mysql:host=localhost;dbname=css_labo;charset=utf8', 'webuser', 'abccsd2');
+        return $pdo;
+    }
+
+    public function GetTimeline2($id)
+    {
+        $pdo = $this->get_pdo();
+        $sql1 = "SELECT * FROM bookmark_tbl WHERE user_id = ?";
+        $ps = $pdo->prepare($sql1);
+        $ps->bindValue(1, $id, PDO::PARAM_STR);
+        $ps->execute();
+        return $ps;
+    }
+    public function Getsubtimeline($css_name)
+    {
+        $pdo = $this->get_pdo();
+        $sql2 = "SELECT * FROM css_tbl WHERE css_id = ?";
+        $ps2 = $pdo->prepare($sql2);
+        $ps2->bindValue(1, $css_name['css_id'], PDO::PARAM_STR);
+        $ps2->execute();
+        return $ps2;
+    }
+
+    public function GetUsername($id)
+    {
+        $pdo = $this->get_pdo();
+        $sql = "SELECT user_name FROM user_tbl WHERE user_id = $id";
+        $ps = $pdo->prepare($sql);
+        $ps->execute();
+        foreach ($ps->fetchAll() as $row) {
+            return $row['user_name'];
+        }
+    }
+
+    public function Getsubtimeline2($name)
+    {
+        $pdo = $this->get_pdo();
+        $sql = "SELECT * FROM css_tbl WHERE creater_id = $name";
+        $ps2 = $pdo->prepare($sql);
+        $ps2->execute();
+        return $ps2;
+    }
+}
