@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
     <script src="JS/profile.js"></script>
     <title>Document</title>
+    <script>
+        window.onload = function() {
+            switchTab(event, 'tb_1');
+        }
+    </script>
 </head>
 
 <body>
@@ -26,7 +31,7 @@
                         <h4 class="text-muted">Contact</h4>
                         <ul class="list-unstyled">
                             <li><a href="#" class="text-muted"><i class="bi bi-hand-thumbs-up"></i></a></li>
-                            <li><a href="Post.html" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
+                            <li><a href="Post.php" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
                             <li><a href="#" class="text-muted"><i class="bi bi-person-plus"></i></a></li>
                             <li><a href="#" class="text-muted"><i class="bi bi-person-x"></i></a></li>
                         </ul>
@@ -36,7 +41,7 @@
         </div>
         <div class="navbar navbar-while bg-while shadow-sm">
             <div class="container d-flex justify-content-between">
-                <a href="home2.html" class="navbar-brand d-flex align-items-center">
+                <a href="home2.php" class="navbar-brand d-flex align-items-center">
                     <strong>CssLabo</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,23 +92,24 @@
                 <div id="tb_1" class="tabs_content--item">
                     <div class="gallery_grid">
                         <?php
-                        session_start();
-                        require "Miyagawa.php";
+                        require "./PHP/Miyagawa.php";
+                        // session_start();
+
+                        $_SESSION['id'] = '1';
+                        
                         $dbmng = new Profile();
-                        $sq = $dbmng->GetTimeline2($_SESSION['id']);
+                        $sq = $dbmng->Getsubtimeline2($_SESSION['id']);
                         if ($sq == null) {
-                            echofunk($sq);
+                            echofunk1($sq);
                         } else {
                             echo 'お気に入りはありません';
                         }
-                        function echofunk($sq)
+                        function echofunk1($sq)
                         {
                             $dbmng = new Profile();
-                            foreach ($sq->fetchAll() as $row) {
-                                $sq2 = $dbmng->Getsubtimeline($row['css_id']);
-                                $row3 = $dbmng->GetUsername($row['user_id']);
-                                foreach ($sq2->fetchAll() as $row2) {
-                                    echo '<div class="col-md-6">
+                            $row3 = $dbmng->GetUsername($_SESSION['user_id']);
+                            foreach ($sq as $row2) {
+                                echo '<div class="col-md-6">
                                         <div class="card mb-5 shadow">
                                             <img class="card-img-top"
                                                 data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
@@ -131,7 +137,7 @@
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item" type="button"><i
                                                                             class="bi bi-send"></i></button></li>
-                                                                <li><form action="" method="post"><button class="dropdown-item" type="submit" value="' . $row['css_id'] . '" name="star"><i
+                                                                <li><form action="" method="post"><button class="dropdown-item" type="submit" value="' . $row2['css_id'] . '" name="star"><i
                                                                             class="bi bi-bookmark-star"></i></button><input type="hidden" name="myid" value="' . $_SESSION['id'] . '"></form></li>
                                                             </ul>
                                                         </div>
@@ -146,7 +152,6 @@
                                             </div>
                                         </div>
                                     </div>';
-                                }
                             }
                         }
                         ?>
@@ -189,42 +194,69 @@
                 </div>
                 <div id="tb_4" class="tabs_content--item tb_4">
                     <div class="gallery_grid-4">
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
-
-                        <div class="grid-img">
-                            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
-                        </div>
+                        <?php
+                        $_SESSION['id'] = '1';
+                        $dbmng = new Profile();
+                        $sq = $dbmng->GetTimeline2($_SESSION['id']);
+                        if ($sq == null) {
+                            echo 'お気に入りはありません';
+                        } else {
+                            echofunk($sq);
+                        }
+                        function echofunk($sq)
+                        {
+                            $dbmng = new Profile();
+                            foreach ($sq->fetchAll() as $row) {
+                                $sq2 = $dbmng->Getsubtimeline($row['css_id']);
+                                $row3 = $dbmng->GetUsername($row['user_id']);
+                                foreach ($sq2->fetchAll() as $row2) {
+                                    echo '<div class="col-md-6">
+                                        <div class="card mb-5 shadow">
+                                            <img class="card-img-top"
+                                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                                alt="Thumbnail [100%x225]" src="' . $row2['css_img'] . '" data-holder-rendered="true"
+                                                style="height: 370px; width: 100%; display: block;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6>' . $row3 . '</h6>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6>' . $row2['css_name'] . '</h6>
+                                                    </div>
+                                                    <div class="col-1">
+                                                    ' . $row2['css_like'] . '
+                                                    </div>
+                                                    <div class="col-1">
+                                                      <form action="" method="post"><button type="submit" value="' . $row2['css_id'] . '" name="good" class="bi bi-hand-thumbs-up"></button></form>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-while dropdown-toggle" type="button"
+                                                                id="dropdownMenu2" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"></button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                                <li><button class="dropdown-item" type="button"><i
+                                                                            class="bi bi-send"></i></button></li>
+                                                                <li><form action="" method="post"><button class="dropdown-item" type="submit" value="' . $row2['css_id'] . '" name="star"><i
+                                                                            class="bi bi-bookmark-star"></i></button><input type="hidden" name="myid" value="' . $_SESSION['id'] . '"></form></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h6>説明</h6>
+                                                    <div>' . $row2['css_info'] . '</div>
+                                                    <h6>HTMLコード</h6>
+                                                    <div>' . htmlspecialchars($row2['css_Hcode']) . '</div>
+                                                    <h6>CSSコード</h6>
+                                                    <div>' . $row2['css_Ccode'] . '</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>';
+                                }
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

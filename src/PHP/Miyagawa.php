@@ -100,4 +100,13 @@ class Profile
             return $row['user_name'];
         }
     }
+
+    public function Getsubtimeline2($name)
+    {
+        $pdo = $this->get_pdo();
+        $sql = "SELECT * FROM css_tbl WHERE creater_id = $name";
+        $ps2 = $pdo->prepare($sql);
+        $ps2->execute();
+        return $ps2;
+    }
 }
