@@ -30,9 +30,9 @@
                     <div class="col-sm-4 offset-md-1 py-4">
                         <ul class="list-unstyled">
                             <!-- <li><a href="#" class="text-muted"><i class="bi bi-hand-thumbs-up"></i></a></li> -->
-                            <li><a href="profile.html" class="text-muted"><i class="bi bi-person-circle"></i></a></li>
-                            <li><a href="post.html" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
-                            <!-- <li><a href="SignIn.html" class="text-muted"><i class="bi bi-person-plus"></i></a></li> -->
+                            <li><a href="http://localhost/web/src/profile.php" class="text-muted"><i class="bi bi-person-circle"></i></a></li>
+                            <li><a href="http://localhost/web/src/post.php" class="text-muted"><i class="bi bi-pencil-square"></i></a></li>
+                            <!-- <li><a href="SignIn.php" class="text-muted"><i class="bi bi-person-plus"></i></a></li> -->
                             <li><a href="#" class="text-muted"><i class="bi bi-person-x" id="logout"></i></a></li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
         </div>
         <div class="navbar navbar-while bg-while shadow-sm">
             <div class="container d-flex justify-content-between">
-                <a href="home2.html" class="navbar-brand d-flex align-items-center">
+                <a href="http://localhost/web/src/home2.php" class="navbar-brand d-flex align-items-center">
                     <strong>CssLabo</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
